@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 25 21:45:55 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (292 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runnerFile_Tanistha.AgentContact.runScenario()'><b>runScenario</b><br>Test class: runnerFile_Tanistha.AgentContact<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fill agent contact form and verify OTP", "Contact a real estate agent in Kolkata"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks property page for Kolkata&apos; and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I open the MagicBricks property page for Kolkata&quot;)
+public void i_open_the_magic_bricks_property_page_for_kolkata() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I click on the {string} heading&quot;)
+public void i_click_on_the_heading(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I click on {string} and switch to the new tab&quot;)
+public void i_click_on_and_switch_to_the_new_tab(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I should see the {string} page loaded&quot;)
+public void i_should_see_the_page_loaded(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select the first agent and click {string}&quot;)
+public void i_select_the_first_agent_and_click(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I fill in the contact form with name {string}, email {string}, and mobile {string}&quot;)
+public void i_fill_in_the_contact_form_with_name_email_and_mobile(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I click the {string} button&quot;)
+public void i_click_the_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I wait for the OTP field to appear&quot;)
+public void i_wait_for_the_otp_field_to_appear() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I manually enter the OTP&quot;)
+public void i_manually_enter_the_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I open the MagicBricks property page for Kolkata(file:///D:/backup/Language/Eclipse/MagicBricks_Sprint_Group4/src/test/java/featureFile_Tanistha/AgentContact.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace912747546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace912747546'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks property page for Kolkata&apos; and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I open the MagicBricks property page for Kolkata&quot;)
+public void i_open_the_magic_bricks_property_page_for_kolkata() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I click on the {string} heading&quot;)
+public void i_click_on_the_heading(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I click on {string} and switch to the new tab&quot;)
+public void i_click_on_and_switch_to_the_new_tab(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I should see the {string} page loaded&quot;)
+public void i_should_see_the_page_loaded(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select the first agent and click {string}&quot;)
+public void i_select_the_first_agent_and_click(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I fill in the contact form with name {string}, email {string}, and mobile {string}&quot;)
+public void i_fill_in_the_contact_form_with_name_email_and_mobile(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I click the {string} button&quot;)
+public void i_click_the_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I wait for the OTP field to appear&quot;)
+public void i_wait_for_the_otp_field_to_appear() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I manually enter the OTP&quot;)
+public void i_manually_enter_the_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I open the MagicBricks property page for Kolkata(file:///D:/backup/Language/Eclipse/MagicBricks_Sprint_Group4/src/test/java/featureFile_Tanistha/AgentContact.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>runnerFile_Tanistha.AgentContact@2e570ded</td></tr>
+</table><p>
+</body>
+</html>
