@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 26 22:40:45 IST 2026</td>
+<td>Started on:</td><td>Thu Mar 26 22:53:36 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>79 seconds (79756 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17413 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,8 +77,57 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runnerFilePrac.AgentContactRunner.runScenario()'><b>runScenario</b><br>Test class: runnerFilePrac.AgentContactRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fill and submit the contact agent form", "Find an Agent - Contact Agent"</td>
-<td></td>
-<td>79</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d02eae58455ac7db24341b398f22acdb, sendKeysToElement {value=[Ljava.lang.CharSequence;@510689af, id=f.AD0F2DB46D2E0BE4E799DB22D1D4F406.d.FC16ACF791C9379FA613F035D79A4E93.e.308}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57872}, goog:processID: 18188, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57872/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d02eae58455ac7db24341b398f22acdb)] -&gt; xpath: //input[@class=&apos;m-contact__input&apos;]]
+Session ID: d02eae58455ac7db24341b398f22acdb
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at stepDefinition_prac.AgentContact.i_enter_the_name_from_the_test_data_sheet(AgentContact.java:81)
+	at ✽.I enter the name from the test data sheet(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile_prac/AgentContact.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1572582034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1572582034'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d02eae58455ac7db24341b398f22acdb, sendKeysToElement {value=[Ljava.lang.CharSequence;@510689af, id=f.AD0F2DB46D2E0BE4E799DB22D1D4F406.d.FC16ACF791C9379FA613F035D79A4E93.e.308}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57872}, goog:processID: 18188, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57872/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d02eae58455ac7db24341b398f22acdb)] -&gt; xpath: //input[@class=&apos;m-contact__input&apos;]]
+Session ID: d02eae58455ac7db24341b398f22acdb
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at stepDefinition_prac.AgentContact.i_enter_the_name_from_the_test_data_sheet(AgentContact.java:81)
+	at ✽.I enter the name from the test data sheet(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile_prac/AgentContact.feature:15)
+</pre></div></td>
+<td>17</td>
 <td>runnerFilePrac.AgentContactRunner@7b50df34</td></tr>
 </table><p>
 </body>

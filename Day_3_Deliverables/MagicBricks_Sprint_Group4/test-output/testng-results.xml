@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-26T22:40:45 IST" name="Default suite" finished-at="2026-03-26T22:42:04 IST" duration-ms="79756">
+  <suite started-at="2026-03-26T22:53:36 IST" name="Default suite" finished-at="2026-03-26T22:53:53 IST" duration-ms="17413">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFilePrac.AgentContactRunner@7b50df34]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-26T22:40:45 IST" name="Default test" finished-at="2026-03-26T22:42:04 IST" duration-ms="79756">
+    <test started-at="2026-03-26T22:53:36 IST" name="Default test" finished-at="2026-03-26T22:53:53 IST" duration-ms="17413">
       <class name="runnerFilePrac.AgentContactRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerFilePrac.AgentContactRunner@7b50df34]" started-at="2026-03-26T22:40:45 IST" name="setUpClass" finished-at="2026-03-26T22:40:45 IST" duration-ms="210" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerFilePrac.AgentContactRunner@7b50df34]" started-at="2026-03-26T22:53:36 IST" name="setUpClass" finished-at="2026-03-26T22:53:36 IST" duration-ms="243" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2dff7085]]>
+                <![CDATA[org.testng.TestRunner@646427f7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFilePrac.AgentContactRunner@7b50df34]" started-at="2026-03-26T22:40:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-26T22:42:04 IST" duration-ms="79476" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFilePrac.AgentContactRunner@7b50df34]" started-at="2026-03-26T22:53:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-26T22:53:53 IST" duration-ms="17035" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,51 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d02eae58455ac7db24341b398f22acdb, sendKeysToElement {value=[Ljava.lang.CharSequence;@510689af, id=f.AD0F2DB46D2E0BE4E799DB22D1D4F406.d.FC16ACF791C9379FA613F035D79A4E93.e.308}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57872}, goog:processID: 18188, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57872/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d02eae58455ac7db24341b398f22acdb)] -> xpath: //input[@class='m-contact__input']]
+Session ID: d02eae58455ac7db24341b398f22acdb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d02eae58455ac7db24341b398f22acdb, sendKeysToElement {value=[Ljava.lang.CharSequence;@510689af, id=f.AD0F2DB46D2E0BE4E799DB22D1D4F406.d.FC16ACF791C9379FA613F035D79A4E93.e.308}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57872}, goog:processID: 18188, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57872/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d02eae58455ac7db24341b398f22acdb)] -> xpath: //input[@class='m-contact__input']]
+Session ID: d02eae58455ac7db24341b398f22acdb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at stepDefinition_prac.AgentContact.i_enter_the_name_from_the_test_data_sheet(AgentContact.java:81)
+at ✽.I enter the name from the test data sheet(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile_prac/AgentContact.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerFilePrac.AgentContactRunner@7b50df34]" started-at="2026-03-26T22:42:04 IST" name="tearDownClass" finished-at="2026-03-26T22:42:04 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerFilePrac.AgentContactRunner@7b50df34]" started-at="2026-03-26T22:53:53 IST" name="tearDownClass" finished-at="2026-03-26T22:53:53 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
