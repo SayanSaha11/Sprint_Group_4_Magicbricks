@@ -24,8 +24,20 @@ public class HomePage {
 	
 	@FindBy(xpath="(//a[contains(text(),'Localities in Kolkata')])[1]")
 	private WebElement locality;
-	public void localityClick() {
-		locality.click();
+	public WebElement getLocality() {
+		return locality;
+	}
+	
+	@FindBy(xpath="(//a[contains(text(),'Projects in Kolkata')])[1]")
+	private WebElement projects;
+	public WebElement getpProjects() {
+		return projects;
+	}
+	
+	@FindBy(xpath="(//a[contains(text(),\\\"Find an Agent\\\")])[1]")
+	private WebElement agent;
+	public WebElement getAgent() {
+		return agent;
 	}
 	
 	@FindBy(css=".mb-search__tab__item")
