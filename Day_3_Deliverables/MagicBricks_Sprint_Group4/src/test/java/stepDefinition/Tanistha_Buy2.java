@@ -1,4 +1,4 @@
-package stepDefinition_Tanistha;
+package stepDefinition;
 
 import io.cucumber.java.en.*;
 
