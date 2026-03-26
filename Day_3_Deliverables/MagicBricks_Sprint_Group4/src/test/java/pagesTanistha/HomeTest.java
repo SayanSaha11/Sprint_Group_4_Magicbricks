@@ -1,8 +1,9 @@
-package Pages;
+package pagesTanistha;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import Pages.HomePage;
+
+import pagesTanistha.HomePage;
 
 public class HomeTest {
 

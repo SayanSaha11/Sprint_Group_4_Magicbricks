@@ -1,4 +1,4 @@
-package Pages;
+package pagesTanistha;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HomePage {
 	WebDriver driver;
@@ -13,6 +14,18 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(id="buyheading")
+	private WebElement buy;
+	public WebElement getBuyClick() {
+		return buy;
+	}
+	
+	@FindBy(xpath="(//a[contains(text(),'Localities in Kolkata')])[1]")
+	private WebElement locality;
+	public void localityClick() {
+		locality.click();
 	}
 	
 	@FindBy(css=".mb-search__tab__item")
@@ -26,6 +39,7 @@ public class HomePage {
 	public WebElement getNewProjects() {
 		return searchTab.get(2);
 	}
+	 
 	
 	@FindBy(css=".mb-search__title")
 	private List<WebElement> searchBar_options;
