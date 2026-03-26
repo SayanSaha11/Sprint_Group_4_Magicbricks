@@ -29,14 +29,14 @@ public class AgentDetailsPage {
     @FindBy(className = "agntbanner__projname")
     private WebElement agentProject;
     public String getAgentProject() {
-        wait.until(ExpectedConditions.visibilityOf(agentName));
+        wait.until(ExpectedConditions.visibilityOf(agentProject));
         return agentProject.getText();
     }
     
     @FindBy(className = "agntbanner__reradata")
     private WebElement agentExp;
     public String getAgentExp() {
-        wait.until(ExpectedConditions.visibilityOf(agentName));
+        wait.until(ExpectedConditions.visibilityOf(agentExp));
         return agentExp.getText();
     }
 }

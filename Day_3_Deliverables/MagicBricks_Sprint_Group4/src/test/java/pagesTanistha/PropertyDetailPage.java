@@ -15,7 +15,7 @@ WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//span[@class=\"mb-header__main__link \"]")
+	@FindBy(xpath="//span[@class='mb-header__main__link']")
 	private List<WebElement> navigationBar;
 	public WebElement getBuyTag() {
 		return navigationBar.get(0);

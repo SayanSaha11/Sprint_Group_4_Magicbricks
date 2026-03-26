@@ -32,18 +32,27 @@ public class AgentPage {
 	@FindBy(xpath="//a[contains(text(),\"View Details\")]")
 	private List<WebElement> viewAgentDetails;
 	public List<WebElement> getAgentDetails() {
+		wait.until(
+		        ExpectedConditions.visibilityOfAllElements(viewAgentDetails)
+		    );
 		return viewAgentDetails;
 	}
 	
 	@FindBy(xpath=".//a[contains(text(),'Contact Agent')]")
 	private List<WebElement> contactAgent;
 	public List<WebElement> getcontactAgent(){
+		wait.until(
+		        ExpectedConditions.visibilityOfAllElements(contactAgent)
+		    );
 		return contactAgent;
 	}
 	
-	@FindBy(xpath="//input[@class=\\\"m-contact__input\\\"]")
+	@FindBy(xpath="//input[@class='m-contact__input']")
 	private List<WebElement> formData;
 	public List<WebElement> getForm() {
+		wait.until(
+		        ExpectedConditions.visibilityOfAllElements(formData)
+		    );
 		return formData;
 	}
 	
