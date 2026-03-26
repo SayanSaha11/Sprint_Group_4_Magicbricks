@@ -30,21 +30,23 @@ public class HomePage {
 	
 	@FindBy(xpath="(//a[contains(text(),'Localities in Kolkata')])[1]")
 	private WebElement locality;
-	public void getLocality() {
+	public void clickLocality() {
 	    wait.until(ExpectedConditions.elementToBeClickable(locality));
 	    locality.click();
 	}
 	
 	@FindBy(xpath="(//a[contains(text(),'Projects in Kolkata')])[1]")
 	private WebElement projects;
-	public WebElement getpProjects() {
-		return projects;
+	public void clickProjects() {
+		wait.until(ExpectedConditions.elementToBeClickable(projects));
+	    projects.click();
 	}
 	
 	@FindBy(xpath="(//a[contains(text(),'Find an Agent')])[1]")
 	private WebElement agent;
-	public WebElement getAgent() {
-		return agent;
+	public void clickAgent() {
+		wait.until(ExpectedConditions.elementToBeClickable(agent));
+	    agent.click();
 	}
 	
 	@FindBy(css=".mb-search__tab__item")

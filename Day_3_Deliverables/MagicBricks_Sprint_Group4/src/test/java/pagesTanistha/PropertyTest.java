@@ -43,10 +43,10 @@ public class PropertyTest {
         PropertyDetailPage property = new PropertyDetailPage(driver);
 
         // Step 1: Click Buy
-        property.getBuyTag().click();
+        property.clickBuyTag();
 
         // Step 2: Click Budget dropdown
-        property.getBudgetTag();
+        property.clickBudgetTag();
 
         Thread.sleep(2000); // wait for dropdown
 
@@ -54,7 +54,7 @@ public class PropertyTest {
         int beforeTabs = driver.getWindowHandles().size();
 
         // Step 3: Click budget category
-        property.getCategory();
+        property.clickCategory();
 
         Thread.sleep(3000); // wait for new tab to open
 

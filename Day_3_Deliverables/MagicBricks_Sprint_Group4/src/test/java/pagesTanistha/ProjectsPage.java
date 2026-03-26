@@ -36,9 +36,9 @@ public class ProjectsPage {
 	
 	@FindBy(id="buy_propertyType")
 	private WebElement propertyType;
-	public WebElement getpropertyType() {
+	public void clickpropertyType() {
 		wait.until(ExpectedConditions.elementToBeClickable(propertyType));
-		return propertyType;
+		propertyType.click();
 	}
 	
 	@FindBy(xpath="//div[@class=\"col1 columnCommon\"]//ul//li")

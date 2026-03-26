@@ -56,6 +56,24 @@ public class AgentPage {
 		return formData;
 	}
 	
+	@FindBy(xpath="//input[@class='m-contact__input m-contact__mobile-no']")
+	private WebElement mobile;
+	public WebElement getMobile() {
+		wait.until(
+		        ExpectedConditions.visibilityOf(mobile)
+		    );
+		return mobile;
+	}
+	
+	@FindBy(id="contactObjButton")
+	private WebElement contactButton;
+	public void clickContact() {
+		wait.until(
+		        ExpectedConditions.elementToBeClickable(contactButton)
+		    );
+		contactButton.click();
+	}
+	
 	@FindBy(id="smsNo")
 	private WebElement otpField;
 	@FindBy(xpath = "//a[contains(text(),'Verify')]")
