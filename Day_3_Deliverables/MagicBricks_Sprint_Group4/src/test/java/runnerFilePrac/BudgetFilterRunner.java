@@ -8,6 +8,6 @@ glue="stepDefinition",
 dryRun=true)
 //dryRun=true when we don't have implementations yet in stepDefinition
 
-public class BudgetFilter extends AbstractTestNGCucumberTests{
+public class BudgetFilterRunner extends AbstractTestNGCucumberTests{
 	
 }
