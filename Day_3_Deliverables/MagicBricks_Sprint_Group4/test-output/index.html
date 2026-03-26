@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\TANISTHA\AppData\Local\Temp\testng-eclipse-1787290714\testng-customsuite.xml</span>
+                    <span>C:\Users\TANISTHA\AppData\Local\Temp\testng-eclipse--611517602\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,22 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runnerFile_Tanistha.AgentContact" class="method navigator-link" hash-for-method="runScenario(&quot;Fill agent contact form and verify OTP&quot;, &quot;Contact a real estate agent in Kolkata&quot;)">runScenario("Fill agent contact form and verify OTP", "Contact a real estate agent in Kolkata")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runnerFile.Tanistha_Buy" class="method navigator-link" hash-for-method="runScenario(&quot;Fill agent contact form and verify OTP&quot;, &quot;MagicBricks Test Scenarios&quot;)">runScenario("Fill agent contact form and verify OTP", "MagicBricks Test Scenarios")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runnerFile.Tanistha_Buy" class="method navigator-link" hash-for-method="runScenario(&quot;Apply budget filter and view property description&quot;, &quot;MagicBricks Test Scenarios&quot;)">runScenario("Apply budget filter and view property description", "MagicBricks Test Scenarios")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runnerFile.Tanistha_Buy" class="method navigator-link" hash-for-method="runScenario(&quot;Search for Gariahat locality and explore it&quot;, &quot;MagicBricks Test Scenarios&quot;)">runScenario("Search for Gariahat locality and explore it", "MagicBricks Test Scenarios")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runnerFile.Tanistha_Buy" class="method navigator-link" hash-for-method="runScenario(&quot;Select property type filter and search&quot;, &quot;MagicBricks Test Scenarios&quot;)">runScenario("Select property type filter and search", "MagicBricks Test Scenarios")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,65 +136,196 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">runnerFile_Tanistha.AgentContact</span>
+              <span class="class-name">runnerFile.Tanistha_Buy</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Fill agent contact form and verify OTP&quot;, &quot;Contact a real estate agent in Kolkata&quot;)">
-                  </a> <!-- runScenario("Fill agent contact form and verify OTP", "Contact a real estate agent in Kolkata") -->
+                  <a name="runScenario(&quot;Fill agent contact form and verify OTP&quot;, &quot;MagicBricks Test Scenarios&quot;)">
+                  </a> <!-- runScenario("Fill agent contact form and verify OTP", "MagicBricks Test Scenarios") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Fill agent contact form and verify OTP","Contact a real estate agent in Kolkata")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks property page for Kolkata&apos; and 9 other step(s) are undefined.
+                  <span class="parameters">("Fill agent contact form and verify OTP","MagicBricks Test Scenarios")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 7 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;I open the MagicBricks property page for Kolkata&quot;)
-public void i_open_the_magic_bricks_property_page_for_kolkata() {
+@Given(&quot;I open the MagicBricks website for {string}&quot;)
+public void i_open_the_magic_bricks_website_for(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;I click on the {string} heading&quot;)
-public void i_click_on_the_heading(String string) {
+@When(&quot;I navigate to {string} page&quot;)
+public void i_navigate_to_page(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;I click on {string} and switch to the new tab&quot;)
-public void i_click_on_and_switch_to_the_new_tab(String string) {
+@When(&quot;I select the first agent and {string}&quot;)
+public void i_select_the_first_agent_and(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Then(&quot;I should see the {string} page loaded&quot;)
-public void i_should_see_the_page_loaded(String string) {
+@When(&quot;I fill contact form with name {string}, email {string}, mobile {string}&quot;)
+public void i_fill_contact_form_with_name_email_mobile(String string, String string2, String string3) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;I select the first agent and click {string}&quot;)
-public void i_select_the_first_agent_and_click(String string) {
+@When(&quot;I submit contact form&quot;)
+public void i_submit_contact_form() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;I fill in the contact form with name {string}, email {string}, and mobile {string}&quot;)
-public void i_fill_in_the_contact_form_with_name_email_and_mobile(String string, String string2, String string3) {
+@Then(&quot;I wait for OTP field&quot;)
+public void i_wait_for_otp_field() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;I click the {string} button&quot;)
-public void i_click_the_button(String string) {
+@Then(&quot;I enter OTP manually&quot;)
+public void i_enter_otp_manually() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Then(&quot;I wait for the OTP field to appear&quot;)
-public void i_wait_for_the_otp_field_to_appear() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I manually enter the OTP&quot;)
-public void i_manually_enter_the_otp() {
+@When(&quot;I verify OTP&quot;)
+public void i_verify_otp() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
-	at ✽.I open the MagicBricks property page for Kolkata(file:///D:/backup/Language/Eclipse/MagicBricks_Sprint_Group4/src/test/java/featureFile_Tanistha/AgentContact.feature:7)
+	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:34)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Apply budget filter and view property description&quot;, &quot;MagicBricks Test Scenarios&quot;)">
+                  </a> <!-- runScenario("Apply budget filter and view property description", "MagicBricks Test Scenarios") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Apply budget filter and view property description","MagicBricks Test Scenarios")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I open the MagicBricks website for {string}&quot;)
+public void i_open_the_magic_bricks_website_for(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I apply budget filter from {string} to {string}&quot;)
+public void i_apply_budget_filter_from_to(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I click the search button&quot;)
+public void i_click_the_search_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I should see the property listings&quot;)
+public void i_should_see_the_property_listings() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I open the first property&quot;)
+public void i_open_the_first_property() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I read full property description&quot;)
+public void i_read_full_property_description() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:8)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search for Gariahat locality and explore it&quot;, &quot;MagicBricks Test Scenarios&quot;)">
+                  </a> <!-- runScenario("Search for Gariahat locality and explore it", "MagicBricks Test Scenarios") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search for Gariahat locality and explore it","MagicBricks Test Scenarios")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I open the MagicBricks website for {string}&quot;)
+public void i_open_the_magic_bricks_website_for(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I navigate to {string} page&quot;)
+public void i_navigate_to_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I search for locality {string}&quot;)
+public void i_search_for_locality(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select the first suggestion&quot;)
+public void i_select_the_first_suggestion() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I should see the title of the first locality card&quot;)
+public void i_should_see_the_title_of_the_first_locality_card() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I explore the first locality card&quot;)
+public void i_explore_the_first_locality_card() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:17)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Select property type filter and search&quot;, &quot;MagicBricks Test Scenarios&quot;)">
+                  </a> <!-- runScenario("Select property type filter and search", "MagicBricks Test Scenarios") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Select property type filter and search","MagicBricks Test Scenarios")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I open the MagicBricks website for {string}&quot;)
+public void i_open_the_magic_bricks_website_for(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I navigate to {string} page&quot;)
+public void i_navigate_to_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select property type {string}&quot;)
+public void i_select_property_type(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I click the search button&quot;)
+public void i_click_the_search_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I should see the selected property type in results&quot;)
+public void i_should_see_the_selected_property_type_in_results() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:26)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -191,7 +337,7 @@ public void i_manually_enter_the_otp() {
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\TANISTHA\AppData\Local\Temp\testng-eclipse-1787290714\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\TANISTHA\AppData\Local\Temp\testng-eclipse--611517602\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -200,7 +346,7 @@ public void i_manually_enter_the_otp() {
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runnerFile_Tanistha.AgentContact&quot;/&gt;
+      &lt;class name=&quot;runnerFile.Tanistha_Buy&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -248,16 +394,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runnerFile_Tanistha.AgentContact')
-data.setCell(0, 3, 106);
+data.setCell(0, 2, 'runnerFile.Tanistha_Buy')
+data.setCell(0, 3, 195);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runnerFile.Tanistha_Buy')
+data.setCell(1, 3, 19);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runnerFile.Tanistha_Buy')
+data.setCell(2, 3, 17);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runnerFile.Tanistha_Buy')
+data.setCell(3, 3, 13);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 106 ms</span>
+              <span class="suite-total-time">Total running time: 244 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -283,20 +441,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">runnerFile_Tanistha.AgentContact</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">runnerFile.Tanistha_Buy</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@76a36b71)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@2d10e0b1)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Fill agent contact form and verify OTP", "Contact a real estate agent in Kolkata")</span>
-                <span class="method-start">153 ms</span>
+                <span class="method-name">runScenario("Apply budget filter and view property description", "MagicBricks Test Scenarios")</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Search for Gariahat locality and explore it", "MagicBricks Test Scenarios")</span>
+                <span class="method-start">448 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Select property type filter and search", "MagicBricks Test Scenarios")</span>
+                <span class="method-start">468 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Fill agent contact form and verify OTP", "MagicBricks Test Scenarios")</span>
+                <span class="method-start">483 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">268 ms</span>
+                <span class="method-start">512 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
