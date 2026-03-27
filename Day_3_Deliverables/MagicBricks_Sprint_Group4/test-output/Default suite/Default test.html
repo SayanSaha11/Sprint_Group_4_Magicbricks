@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 26 10:20:38 IST 2026</td>
+<td>Started on:</td><td>Fri Mar 27 15:38:06 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (549 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17734 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,319 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runnerFile.Tanistha_Buy.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Tanistha_Buy<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fill agent contact form and verify OTP", "MagicBricks Test Scenarios"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 7 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I open the MagicBricks website for {string}&quot;)
-public void i_open_the_magic_bricks_website_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I navigate to {string} page&quot;)
-public void i_navigate_to_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I select the first agent and {string}&quot;)
-public void i_select_the_first_agent_and(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I fill contact form with name {string}, email {string}, mobile {string}&quot;)
-public void i_fill_contact_form_with_name_email_mobile(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I submit contact form&quot;)
-public void i_submit_contact_form() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I wait for OTP field&quot;)
-public void i_wait_for_otp_field() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I enter OTP manually&quot;)
-public void i_enter_otp_manually() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I verify OTP&quot;)
-public void i_verify_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:34)
-</pre></div><a href='#' onClick='toggleBox("stack-trace137533655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace137533655'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 7 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I open the MagicBricks website for {string}&quot;)
-public void i_open_the_magic_bricks_website_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I navigate to {string} page&quot;)
-public void i_navigate_to_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I select the first agent and {string}&quot;)
-public void i_select_the_first_agent_and(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I fill contact form with name {string}, email {string}, mobile {string}&quot;)
-public void i_fill_contact_form_with_name_email_mobile(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I submit contact form&quot;)
-public void i_submit_contact_form() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I wait for OTP field&quot;)
-public void i_wait_for_otp_field() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I enter OTP manually&quot;)
-public void i_enter_otp_manually() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I verify OTP&quot;)
-public void i_verify_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:34)
-</pre></div></td>
-<td>0</td>
-<td>runnerFile.Tanistha_Buy@2e570ded</td></tr>
+<td title='runnerFile.ProjectsRunner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.ProjectsRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply property type filter and verify results", "Projects in Kolkata - View, Browse and Filter Listings"</td>
+<td></td>
+<td>8</td>
+<td>runnerFile.ProjectsRunner@7b50df34</td></tr>
 <tr>
-<td title='runnerFile.Tanistha_Buy.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Tanistha_Buy<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply budget filter and view property description", "MagicBricks Test Scenarios"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 5 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I open the MagicBricks website for {string}&quot;)
-public void i_open_the_magic_bricks_website_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I apply budget filter from {string} to {string}&quot;)
-public void i_apply_budget_filter_from_to(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click the search button&quot;)
-public void i_click_the_search_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I should see the property listings&quot;)
-public void i_should_see_the_property_listings() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I open the first property&quot;)
-public void i_open_the_first_property() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I read full property description&quot;)
-public void i_read_full_property_description() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1205580258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1205580258'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 5 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I open the MagicBricks website for {string}&quot;)
-public void i_open_the_magic_bricks_website_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I apply budget filter from {string} to {string}&quot;)
-public void i_apply_budget_filter_from_to(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click the search button&quot;)
-public void i_click_the_search_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I should see the property listings&quot;)
-public void i_should_see_the_property_listings() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I open the first property&quot;)
-public void i_open_the_first_property() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I read full property description&quot;)
-public void i_read_full_property_description() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:8)
-</pre></div></td>
-<td>0</td>
-<td>runnerFile.Tanistha_Buy@2e570ded</td></tr>
-<tr>
-<td title='runnerFile.Tanistha_Buy.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Tanistha_Buy<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for Gariahat locality and explore it", "MagicBricks Test Scenarios"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 5 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I open the MagicBricks website for {string}&quot;)
-public void i_open_the_magic_bricks_website_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I navigate to {string} page&quot;)
-public void i_navigate_to_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I search for locality {string}&quot;)
-public void i_search_for_locality(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I select the first suggestion&quot;)
-public void i_select_the_first_suggestion() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I should see the title of the first locality card&quot;)
-public void i_should_see_the_title_of_the_first_locality_card() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I explore the first locality card&quot;)
-public void i_explore_the_first_locality_card() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:17)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2000648320", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2000648320'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 5 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I open the MagicBricks website for {string}&quot;)
-public void i_open_the_magic_bricks_website_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I navigate to {string} page&quot;)
-public void i_navigate_to_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I search for locality {string}&quot;)
-public void i_search_for_locality(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I select the first suggestion&quot;)
-public void i_select_the_first_suggestion() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I should see the title of the first locality card&quot;)
-public void i_should_see_the_title_of_the_first_locality_card() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I explore the first locality card&quot;)
-public void i_explore_the_first_locality_card() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:17)
-</pre></div></td>
-<td>0</td>
-<td>runnerFile.Tanistha_Buy@2e570ded</td></tr>
-<tr>
-<td title='runnerFile.Tanistha_Buy.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Tanistha_Buy<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select property type filter and search", "MagicBricks Test Scenarios"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 4 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I open the MagicBricks website for {string}&quot;)
-public void i_open_the_magic_bricks_website_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I navigate to {string} page&quot;)
-public void i_navigate_to_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I select property type {string}&quot;)
-public void i_select_property_type(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click the search button&quot;)
-public void i_click_the_search_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I should see the selected property type in results&quot;)
-public void i_should_see_the_selected_property_type_in_results() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:26)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1114335860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1114335860'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I open the MagicBricks website for &quot;Kolkata&quot;&apos; and 4 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I open the MagicBricks website for {string}&quot;)
-public void i_open_the_magic_bricks_website_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I navigate to {string} page&quot;)
-public void i_navigate_to_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I select property type {string}&quot;)
-public void i_select_property_type(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click the search button&quot;)
-public void i_click_the_search_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I should see the selected property type in results&quot;)
-public void i_should_see_the_selected_property_type_in_results() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I open the MagicBricks website for &quot;Kolkata&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Tanistha_Buy2.feature:26)
-</pre></div></td>
-<td>0</td>
-<td>runnerFile.Tanistha_Buy@2e570ded</td></tr>
+<td title='runnerFile.ProjectsRunner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.ProjectsRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View featured developer details and browse project listings", "Projects in Kolkata - View, Browse and Filter Listings"</td>
+<td></td>
+<td>9</td>
+<td>runnerFile.ProjectsRunner@7b50df34</td></tr>
 </table><p>
 </body>
 </html>

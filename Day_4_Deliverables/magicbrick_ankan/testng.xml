@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MagicBricks Test Suite" parallel="none" data-provider-thread-count="3">
+
+    <test name="MagicBricks Rent Page Tests">
+        <classes>
+            <class name="runner.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>
