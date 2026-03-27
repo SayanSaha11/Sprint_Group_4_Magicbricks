@@ -51,9 +51,9 @@ public class HomePage {
 	
 	@FindBy(css=".mb-search__tab__item")
 	private List<WebElement> searchTab;
-	public WebElement getBuy() {
+	public void getBuy() {
 		wait.until(ExpectedConditions.elementToBeClickable(searchTab.get(0)));
-		return searchTab.get(0);
+		searchTab.get(0).click();
 	}
 	public WebElement getRent() {
 		wait.until(ExpectedConditions.elementToBeClickable(searchTab.get(1)));
@@ -77,11 +77,13 @@ public class HomePage {
 	}
 	
 	// Min budget option (example ₹10 Lac)
-    @FindBy(xpath = "(//div[contains(text(),'₹10 Lac')])[1]")
-    private WebElement minBudgetOption;
-    public void selectMinBudget() {
-    	minBudgetOption.click();
-    }
+	@FindBy(xpath = "(//div[contains(text(),'₹10 Lac')])[1]")
+	private WebElement minBudgetOption;
+	public void selectMinBudget() {
+	    // ✅ Wait for dropdown to fully open before clicking
+	    wait.until(ExpectedConditions.elementToBeClickable(minBudgetOption));
+	    minBudgetOption.click();
+	}
     
     @FindBy(id="maxBhkIndex_8")
     private WebElement maxBudgetOption;

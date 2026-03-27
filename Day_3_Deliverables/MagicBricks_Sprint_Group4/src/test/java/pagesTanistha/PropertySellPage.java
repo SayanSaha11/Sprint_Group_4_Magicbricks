@@ -3,6 +3,9 @@ package pagesTanistha;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,10 +25,32 @@ public class PropertySellPage {
 	
 	@FindBy(css=".mb-srp__card--title")
 	private List<WebElement> propertyTitle;
+	public List<WebElement> getProperty(){
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	    return wait.until(
+	        ExpectedConditions.presenceOfAllElementsLocatedBy(
+	            By.cssSelector(".mb-srp__card--title")
+	        )
+	    );
+	}
 	
 	public void clickFirst() {
-		wait.until(ExpectedConditions.visibilityOfAllElements(propertyTitle));
-		wait.until(ExpectedConditions.elementToBeClickable(propertyTitle.get(0)));
-		propertyTitle.get(0).click();
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+	    for (int i = 0; i < 3; i++) {
+	        try {
+	            List<WebElement> properties = wait.until(
+	                ExpectedConditions.presenceOfAllElementsLocatedBy(
+	                    By.cssSelector(".mb-srp__card--title")
+	                )
+	            );
+
+	            properties.get(0).click();
+	            break;
+
+	        } catch (StaleElementReferenceException e) {
+	            System.out.println("Retrying due to stale element...");
+	        }
+	    }
 	}
 }

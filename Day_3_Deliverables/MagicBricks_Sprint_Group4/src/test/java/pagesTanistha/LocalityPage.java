@@ -45,6 +45,13 @@ public class LocalityPage {
 	private WebElement projectExploreLocality;
 	public WebElement getExplore() {
 		wait.until(ExpectedConditions.elementToBeClickable(projectExploreLocality));
-		return projectExploreLocality;
+		 return projectExploreLocality;
+	}
+	
+	@FindBy(xpath="(//a[@class='loc-card__explore'])[0]")
+	private WebElement projectExplorProjects;
+	public void getExploreProjects() {
+		wait.until(ExpectedConditions.elementToBeClickable(projectExploreLocality));
+		 projectExploreLocality.click();
 	}
 }

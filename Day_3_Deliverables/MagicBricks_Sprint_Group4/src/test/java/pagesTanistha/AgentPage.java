@@ -3,6 +3,7 @@ package pagesTanistha;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -76,20 +77,18 @@ public class AgentPage {
 	
 	@FindBy(id="smsNo")
 	private WebElement otpField;
-	@FindBy(xpath = "//a[contains(text(),'Verify')]")
-	private WebElement verifyButton;
 	public void handleOTP() throws InterruptedException {
 	    // Wait for OTP field
-	     wait.until(ExpectedConditions.visibilityOf(otpField));
-
-	     System.out.println("Enter OTP manually...");
-
-	     // Give user time to enter OTP
-	     Thread.sleep(60000); // 60 sec
-
-	     // Click Verify
-	     wait.until(ExpectedConditions.elementToBeClickable(verifyButton));
-	     verifyButton.click();
-	    }
-	 
+	    wait.until(ExpectedConditions.visibilityOf(otpField));
+	    System.out.println("Enter OTP manually...");
+	    
+	    // Give user time to enter OTP
+	    Thread.sleep(60000);
+	    
+	    // ✅ Re-locate verify button fresh after sleep — avoids stale element
+	    wait.until(ExpectedConditions.elementToBeClickable(
+	        By.xpath("//a[contains(text(),'Verify')]")
+	    ));
+	    driver.findElement(By.xpath("//a[contains(text(),'Verify')]")).click();
+	}	 
 }

@@ -19,9 +19,12 @@ public class Hooks {
 		
 		//driver.get("https://www.magicbricks.com/property-for-sale-rent-in-Kolkata/residential-real-estate-Kolkata");
 	}
-	
+
 	@After
-	public void closeDown() {
-		if(driver!=null) driver.quit();
+	public void tearDown() {
+	    if (driver != null) {
+	        driver.quit();
+	        driver = null; // ✅ reset so next scenario gets a fresh browser
+	    }
 	}
 }
