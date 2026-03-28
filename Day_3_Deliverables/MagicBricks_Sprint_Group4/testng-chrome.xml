@@ -5,14 +5,14 @@
     <test name="Buy-Chrome" thread-count="3">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="runnerFile.Runner"/>
+            <class name="runnerFile_Tanistha.Runner"/>
         </classes>
     </test>
 
     <test name="Locality-Chrome" thread-count="2">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="runnerFile.LocalityBuyRunner"/>
+            <class name="runnerFile_Tanistha.LocalityBuyRunner"/>
         </classes>
     </test>
 
