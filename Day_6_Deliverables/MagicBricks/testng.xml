@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MagicBricks Test Suite" parallel="none" data-provider-thread-count="2">
+
+    <!-- ===== ANKAN'S TESTS ===== -->
+    <test name="Ankan Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runner.runner_ankan.TestRunner"/>
+        </classes>
+    </test>
+
+    <!-- ===== MEMBER 2 — paste your <test> block here ===== -->
+    <!--
+    <test name="Member2 Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runner.runner_member2.TestRunner"/>
+        </classes>
+    </test>
+    -->
+
+    <!-- ===== MEMBER 3 — paste your <test> block here ===== -->
+
+    <!-- ===== MEMBER 4 — paste your <test> block here ===== -->
+
+</suite>

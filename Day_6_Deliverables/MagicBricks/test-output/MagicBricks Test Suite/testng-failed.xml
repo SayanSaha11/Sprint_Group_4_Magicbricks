@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Failed suite [MagicBricks Test Suite]">
+  <test thread-count="5" name="Ankan Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="runner.runner_ankan.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="6"/>
+          <include name="setBrowser"/>
+        </methods>
+      </class> <!-- runner.runner_ankan.TestRunner -->
+    </classes>
+  </test> <!-- Ankan Tests(failed) -->
+</suite> <!-- Failed suite [MagicBricks Test Suite] -->
