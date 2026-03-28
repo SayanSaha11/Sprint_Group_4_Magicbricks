@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtil {
 	
 	private static final String FILE_PATH = System.getProperty("user.dir") 
-            + "/src/test/testdata_Tanistha.xlsx";
+            + "/src/testdata_Tanistha.xlsx";
 
     //C:\Users\TANISTHA\git\MagicBricks\Day_3_Deliverables\MagicBricks_Sprint_Group4\src\testdata_Tanistha.xlsx
 
