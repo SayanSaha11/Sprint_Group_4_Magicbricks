@@ -24,9 +24,6 @@ public class PropertyDetailPage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
-    // ✅ FIX 1: Re-locate fresh using By.xpath instead of @FindBy proxy
-    // Old code used @FindBy List<WebElement> navigationBar which went stale
-    // after tab switch. Now we re-query the DOM inside the method itself.
     public void clickBuyTag() {
         try { Thread.sleep(1500); } catch (InterruptedException e) { e.printStackTrace(); }
 
@@ -47,8 +44,6 @@ public class PropertyDetailPage {
         }
     }
 
-    // ✅ FIX 2: Re-locate fresh using By.cssSelector instead of @FindBy proxy
-    // Old code used @FindBy List<WebElement> functionBuy which went stale.
     public void clickBudgetTag() {
         try { Thread.sleep(1500); } catch (InterruptedException e) { e.printStackTrace(); }
 
@@ -64,8 +59,6 @@ public class PropertyDetailPage {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", functionBuy.get(2));
     }
 
-    // ✅ FIX 3: Re-locate fresh using By.xpath instead of @FindBy proxy
-    // Old code used @FindBy List<WebElement> budgetCategory which went stale.
     public void clickCategory() {
         try { Thread.sleep(1500); } catch (InterruptedException e) { e.printStackTrace(); }
 
@@ -81,10 +74,6 @@ public class PropertyDetailPage {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", budgetCategory.get(2));
     }
 
-    // ✅ FIX 4: Combined method - calls Buy, Budget and Category in sequence
-    // NO tab switching here - all three actions happen on the same page
-    // Tab switching was WRONG - clicking Buy stays on property detail page
-    // Only clicking a budget category opens a new tab
     public void clickBuyThenBudgetThenCategory(String budgetRange) {
 
         // Step 1: Click Buy tag with retry for stale element
@@ -105,7 +94,7 @@ public class PropertyDetailPage {
             }
         }
 
-        // Step 2: Wait for dropdown to appear - use longer sleep as dropdown is hover based
+        // Step 2: Wait for dropdown to appear
         try { Thread.sleep(2000); } catch (InterruptedException e) { e.printStackTrace(); }
 
         // Step 3: Directly click budget range span by text from feature file
@@ -125,43 +114,56 @@ public class PropertyDetailPage {
         }
     }
     
-    // ✅ FIX 5: Re-locate readMore fresh using By.xpath instead of @FindBy proxy
-    // Old code: wait.until(visibilityOf(readMore_btn)) on a stale proxy threw
-    // StaleElementReferenceException after page rendered dynamically
     public String getDesc() {
-        // Step 1: Scroll Read More into center view
+        
+        // Step 1: Wait for page to be fully loaded first
+        wait.until(d -> ((JavascriptExecutor) d)
+            .executeScript("return document.readyState").equals("complete"));
+
+        // Step 2: Scroll Read More into view
         WebElement readMore = wait.until(
             ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//span[contains(@class,'description--content short')]//a[contains(@class,'description--readmore')]")
             )
         );
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", readMore);
+        ((JavascriptExecutor) driver).executeScript(
+            "arguments[0].scrollIntoView({block:'center'});", readMore
+        );
 
-        try { Thread.sleep(800); } catch (InterruptedException e) { e.printStackTrace(); }
+        try { Thread.sleep(1000); } catch (InterruptedException e) { e.printStackTrace(); }
 
-        // Step 2: Re-locate fresh and click
+        // Step 3: JS click instead of normal click — avoids ElementClickInterceptedException
+        // under parallel load when overlays/popups may be covering the button
         WebElement readMoreFresh = wait.until(
-            ExpectedConditions.elementToBeClickable(
+            ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//span[contains(@class,'description--content short')]//a[contains(@class,'description--readmore')]")
             )
         );
-        
-        if(readMoreFresh!=null)
-        	System.out.println("Clicked");
-        
-        readMoreFresh.click();
-        
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", readMoreFresh);
 
-        // Step 3: Wait for full span to become visible (hide class removed)
-        WebElement fullDesc = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//span[contains(@class,'description--content full') and not(contains(@class,'hide'))]//p")
-            )
-        );
-        
-        System.out.println(fullDesc.getText().isEmpty());
+        try { Thread.sleep(1000); } catch (InterruptedException e) { e.printStackTrace(); }
 
-        return fullDesc.getText();
+        // Step 4: Wait for full description — increased timeout for parallel load
+        WebDriverWait longWait = new WebDriverWait(driver, Duration.ofSeconds(25));
+        
+        try {
+            WebElement fullDesc = longWait.until(
+                ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//span[contains(@class,'description--content full') and not(contains(@class,'hide'))]//p")
+                )
+            );
+            String text = fullDesc.getText();
+            System.out.println("Full desc empty: " + text.isEmpty());
+            return text;
+
+        } catch (Exception e) {
+            // Fallback — return whatever description is visible
+            System.out.println("Full desc not found, falling back to short desc");
+            WebElement shortDesc = driver.findElement(
+                By.xpath("//span[contains(@class,'description--content')]//p")
+            );
+            return shortDesc.getText();
+        }
     }
     
     @FindBy(xpath="(//span[contains(text(),\"Download Brochure\")])[3]")

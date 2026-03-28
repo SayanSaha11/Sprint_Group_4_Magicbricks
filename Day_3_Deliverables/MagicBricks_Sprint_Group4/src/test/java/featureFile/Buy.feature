@@ -2,7 +2,7 @@ Feature: MagicBricks Kolkata - Property Search, Projects, Localities and Agent F
 
 
 # ---------------------------------------------------
-# 🔹 BUDGET FILTER (🔥 NO BUY STEP HERE)
+# 🔹 BUDGET FILTER 
 # ---------------------------------------------------
 Scenario: Apply budget filter and verify property listings are displayed
   Given I open the MagicBricks Kolkata residential real estate page
@@ -14,7 +14,7 @@ Scenario: Apply budget filter and verify property listings are displayed
 
 
 # ---------------------------------------------------
-# 🔹 PROJECTS (UI NAVIGATION → NO BUY STEP NEEDED)
+# 🔹 PROJECTS 
 # ---------------------------------------------------
 Scenario: View featured developer details and browse project listings
   Given I open the MagicBricks Kolkata residential real estate page
@@ -54,7 +54,7 @@ Scenario: Open first property and read the full description
   And the full property description should be visible and displayed
   
 # ---------------------------------------------------
-# 🔹 AGENT SCENARIO (Needs UI navigation)
+# 🔹 AGENT SCENARIO 
 # ---------------------------------------------------
 Scenario: View details of the first listed agent
   Given I open the MagicBricks Kolkata residential real estate page

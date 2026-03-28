@@ -35,8 +35,7 @@ public class PropertySellPage {
 	}
 	
 	public void clickFirst() {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	    for (int i = 0; i < 3; i++) {
 	        try {
 	            List<WebElement> properties = wait.until(
@@ -44,10 +43,11 @@ public class PropertySellPage {
 	                    By.cssSelector(".mb-srp__card--title")
 	                )
 	            );
-
-	            properties.get(0).click();
+	            //  JS click — avoids interception by overlays/cookie banners
+	            ((JavascriptExecutor) driver).executeScript(
+	                "arguments[0].click();", properties.get(0)
+	            );
 	            break;
-
 	        } catch (StaleElementReferenceException e) {
 	            System.out.println("Retrying due to stale element...");
 	        }

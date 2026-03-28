@@ -80,7 +80,8 @@ public class HomePage {
 	@FindBy(xpath = "(//div[contains(text(),'₹10 Lac')])[1]")
 	private WebElement minBudgetOption;
 	public void selectMinBudget() {
-	    // ✅ Wait for dropdown to fully open before clicking
+		
+	    // Wait for dropdown to fully open before clicking
 	    wait.until(ExpectedConditions.elementToBeClickable(minBudgetOption));
 	    minBudgetOption.click();
 	}

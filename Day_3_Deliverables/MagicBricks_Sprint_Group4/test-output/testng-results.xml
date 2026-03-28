@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-28T13:13:05 IST" name="Default suite" finished-at="2026-03-28T13:13:30 IST" duration-ms="24804">
+  <suite started-at="2026-03-28T21:23:28 IST" name="Edge" finished-at="2026-03-28T21:25:34 IST" duration-ms="125791">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.LocalityBuyRunner@7b50df34]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.Runner@4f67eb2a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.LocalityBuyRunner@3d1cfad4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-28T13:13:05 IST" name="Default test" finished-at="2026-03-28T13:13:30 IST" duration-ms="24804">
+    <test started-at="2026-03-28T21:23:28 IST" name="Locality-Edge" finished-at="2026-03-28T21:24:34 IST" duration-ms="65881">
       <class name="runnerFile.LocalityBuyRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerFile.LocalityBuyRunner@7b50df34]" started-at="2026-03-28T13:13:05 IST" name="setUpClass" finished-at="2026-03-28T13:13:05 IST" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerFile.LocalityBuyRunner@3d1cfad4]" started-at="2026-03-28T21:23:28 IST" name="setUpClass" finished-at="2026-03-28T21:23:29 IST" duration-ms="667" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3965bdf9]]>
+                <![CDATA[org.testng.TestRunner@1b2abca6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.LocalityBuyRunner@7b50df34]" started-at="2026-03-28T13:13:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T13:13:16 IST" duration-ms="11092" status="PASS">
+        <test-method is-config="true" signature="setBrowser(java.lang.String)[pri:0, instance:runnerFile.LocalityBuyRunner@3d1cfad4]" started-at="2026-03-28T21:23:29 IST" name="setBrowser" finished-at="2026-03-28T21:23:29 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.LocalityBuyRunner@3d1cfad4]" started-at="2026-03-28T21:23:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:24:28 IST" duration-ms="59000" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.LocalityBuyRunner@7b50df34]" started-at="2026-03-28T13:13:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T13:13:30 IST" duration-ms="13428" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.LocalityBuyRunner@3d1cfad4]" started-at="2026-03-28T21:23:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:24:33 IST" duration-ms="64170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,11 +65,137 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerFile.LocalityBuyRunner@7b50df34]" started-at="2026-03-28T13:13:30 IST" name="tearDownClass" finished-at="2026-03-28T13:13:30 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerFile.LocalityBuyRunner@3d1cfad4]" started-at="2026-03-28T21:24:33 IST" name="tearDownClass" finished-at="2026-03-28T21:24:34 IST" duration-ms="962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runnerFile.LocalityBuyRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Locality-Edge -->
+    <test started-at="2026-03-28T21:23:28 IST" name="Buy-Edge" finished-at="2026-03-28T21:25:34 IST" duration-ms="125791">
+      <class name="runnerFile.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerFile.Runner@4f67eb2a]" started-at="2026-03-28T21:23:28 IST" name="setUpClass" finished-at="2026-03-28T21:23:29 IST" duration-ms="667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@e15b7e8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setBrowser(java.lang.String)[pri:0, instance:runnerFile.Runner@4f67eb2a]" started-at="2026-03-28T21:23:29 IST" name="setBrowser" finished-at="2026-03-28T21:23:29 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.Runner@4f67eb2a]" started-at="2026-03-28T21:23:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:24:28 IST" duration-ms="58814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply property type filter and verify results"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.Runner@4f67eb2a]" started-at="2026-03-28T21:23:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:25:34 IST" duration-ms="125020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Fill and submit the contact agent form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.Runner@4f67eb2a]" started-at="2026-03-28T21:23:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:24:23 IST" duration-ms="53483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply budget filter and verify property listings are displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.Runner@4f67eb2a]" started-at="2026-03-28T21:23:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:24:28 IST" duration-ms="58635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View details of the first listed agent"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.Runner@4f67eb2a]" started-at="2026-03-28T21:23:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:24:23 IST" duration-ms="53523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View featured developer details and browse project listings"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.Runner@4f67eb2a]" started-at="2026-03-28T21:23:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:24:40 IST" duration-ms="71068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open first property and read the full description"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerFile.Runner@4f67eb2a]" started-at="2026-03-28T21:25:34 IST" name="tearDownClass" finished-at="2026-03-28T21:25:34 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runnerFile.Runner -->
+    </test> <!-- Buy-Edge -->
+  </suite> <!-- Edge -->
 </testng-results>
