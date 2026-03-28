@@ -4,14 +4,14 @@
     <test name="Buy-Edge" thread-count="3">
         <parameter name="browser" value="edge"/>
         <classes>
-            <class name="runnerFile.Runner"/>
+            <class name="runnerFile_Tanistha.Runner"/>
         </classes>
     </test>
 
     <test name="Locality-Edge" thread-count="2">
         <parameter name="browser" value="edge"/>
         <classes>
-            <class name="runnerFile.LocalityBuyRunner"/>
+            <class name="runnerFile_Tanistha.LocalityBuyRunner"/>
         </classes>
     </test>
 
