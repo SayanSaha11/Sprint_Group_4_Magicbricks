@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Ankan CrossBrowser Suite"
+       parallel="tests"
+       thread-count="2"
+       data-provider-thread-count="1">
+
+    <!-- ===== ANKAN'S TESTS ===== -->
+    <test name="Ankan Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runner.runner_ankan.TestRunnerCrossBrowser"/>
+        </classes>
+    </test>
+
+    <test name="Ankan Edge Tests">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="runner.runner_ankan.TestRunnerCrossBrowser"/>
+        </classes>
+    </test>
+
+    <!-- ===== MEMBER 2 — paste your <test> blocks here ===== -->
+    <!--
+    <test name="Member2 Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runner.runner_member2.TestRunnerCrossBrowser"/>
+        </classes>
+    </test>
+    <test name="Member2 Edge Tests">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="runner.runner_member2.TestRunnerCrossBrowser"/>
+        </classes>
+    </test>
+    -->
+
+    <!-- ===== MEMBER 3 — paste your <test> blocks here ===== -->
+
+    <!-- ===== MEMBER 4 — paste your <test> blocks here ===== -->
+
+</suite>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="15" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-28T15:47:50 IST" name="Ankan CrossBrowser Suite" finished-at="2026-03-28T15:57:54 IST" duration-ms="603594">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-03-28T15:47:50 IST" name="Ankan Edge Tests" finished-at="2026-03-28T15:57:43 IST" duration-ms="592551">
+      <class name="runner.runner_ankan.TestRunnerCrossBrowser">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:47:50 IST" name="setUpClass" finished-at="2026-03-28T15:47:51 IST" duration-ms="1203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@14555e0a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setBrowser(java.lang.String,org.testng.ITestContext)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:47:51 IST" name="setBrowser" finished-at="2026-03-28T15:47:51 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@14555e0a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:47:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:48:22 IST" duration-ms="30606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Auto-suggest appears when user types a valid city"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:48:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:48:46 IST" duration-ms="24534" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Error message shown for invalid location input"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".mb-search__tag-close"}
+  (Session info: MicrosoftEdge=146.0.3856.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c30f149a46cf6e3be3fab9d77cb03b0d, findElement {using=css selector, value=.mb-search__tag-close}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.72, fedcm:accounts: true, goog:processID: 25924, ms:edgeOptions: {debuggerAddress: localhost:51679}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\ankan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51679/devtoo..., se:cdpVersion: 146.0.3856.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c30f149a46cf6e3be3fab9d77cb03b0d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".mb-search__tag-close"}
+  (Session info: MicrosoftEdge=146.0.3856.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c30f149a46cf6e3be3fab9d77cb03b0d, findElement {using=css selector, value=.mb-search__tag-close}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.72, fedcm:accounts: true, goog:processID: 25924, ms:edgeOptions: {debuggerAddress: localhost:51679}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\ankan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51679/devtoo..., se:cdpVersion: 146.0.3856.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c30f149a46cf6e3be3fab9d77cb03b0d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+at pages.pages_ankan.HomePage.enterInvalidCity(HomePage.java:61)
+at stepDefinitions.stepDefinitions_ankan.LocationSearchSteps.userTypesInvalidCityUsingTestData(LocationSearchSteps.java:47)
+at ✽.user types invalid city using test data "1"(file:///C:/Users/ankan/eclipse-workspace/testing/Practice/src/test/resources/features/features_ankan/MagicBricks.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:48:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:50:34 IST" duration-ms="107360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Properties are sorted in ascending order of price"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:50:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:51:24 IST" duration-ms="49696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can view full property details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:51:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:52:38 IST" duration-ms="74357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can view agent name photo contact and listing history"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:52:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:53:24 IST" duration-ms="46076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can view location details on property page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:53:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:55:41 IST" duration-ms="137338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can contact agent by verifying OTP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:55:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:57:41 IST" duration-ms="119729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can write and submit a property review"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@574b560f]" started-at="2026-03-28T15:57:41 IST" name="tearDownClass" finished-at="2026-03-28T15:57:43 IST" duration-ms="1489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.runner_ankan.TestRunnerCrossBrowser -->
+    </test> <!-- Ankan Edge Tests -->
+    <test started-at="2026-03-28T15:47:50 IST" name="Ankan Chrome Tests" finished-at="2026-03-28T15:57:54 IST" duration-ms="603594">
+      <class name="runner.runner_ankan.TestRunnerCrossBrowser">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:47:50 IST" name="setUpClass" finished-at="2026-03-28T15:47:51 IST" duration-ms="1202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7a419da4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setBrowser(java.lang.String,org.testng.ITestContext)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:47:51 IST" name="setBrowser" finished-at="2026-03-28T15:47:51 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7a419da4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:47:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:48:19 IST" duration-ms="27346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Auto-suggest appears when user types a valid city"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:48:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:48:42 IST" duration-ms="23433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Error message shown for invalid location input"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:48:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:50:28 IST" duration-ms="105828" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Properties are sorted in ascending order of price"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:50:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:51:18 IST" duration-ms="49909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can view full property details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:51:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:52:35 IST" duration-ms="76666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can view agent name photo contact and listing history"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:52:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:53:17 IST" duration-ms="42920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can view location details on property page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:53:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:55:36 IST" duration-ms="138120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can contact agent by verifying OTP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:55:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T15:57:54 IST" duration-ms="137975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can write and submit a property review"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Rent Page Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.runner_ankan.TestRunnerCrossBrowser@445b295b]" started-at="2026-03-28T15:57:54 IST" name="tearDownClass" finished-at="2026-03-28T15:57:54 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.runner_ankan.TestRunnerCrossBrowser -->
+    </test> <!-- Ankan Chrome Tests -->
+  </suite> <!-- Ankan CrossBrowser Suite -->
+</testng-results>
