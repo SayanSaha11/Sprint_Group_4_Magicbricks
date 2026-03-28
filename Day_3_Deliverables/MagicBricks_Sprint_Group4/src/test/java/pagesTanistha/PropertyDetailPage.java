@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -128,19 +129,52 @@ public class PropertyDetailPage {
     // Old code: wait.until(visibilityOf(readMore_btn)) on a stale proxy threw
     // StaleElementReferenceException after page rendered dynamically
     public String getDesc() {
+        // Step 1: Scroll Read More into center view
         WebElement readMore = wait.until(
-            ExpectedConditions.elementToBeClickable(
-                By.xpath("(//a[contains(@class,'description--readmore')])[1]")
+            ExpectedConditions.presenceOfElementLocated(
+                By.xpath("//span[contains(@class,'description--content short')]//a[contains(@class,'description--readmore')]")
             )
         );
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", readMore);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", readMore);
 
-        WebElement desc = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[contains(@class,'description')]")
+        try { Thread.sleep(800); } catch (InterruptedException e) { e.printStackTrace(); }
+
+        // Step 2: Re-locate fresh and click
+        WebElement readMoreFresh = wait.until(
+            ExpectedConditions.elementToBeClickable(
+                By.xpath("//span[contains(@class,'description--content short')]//a[contains(@class,'description--readmore')]")
             )
         );
-        return desc.getText();
+        
+        if(readMoreFresh!=null)
+        	System.out.println("Clicked");
+        
+        readMoreFresh.click();
+        
+
+        // Step 3: Wait for full span to become visible (hide class removed)
+        WebElement fullDesc = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//span[contains(@class,'description--content full') and not(contains(@class,'hide'))]//p")
+            )
+        );
+        
+        System.out.println(fullDesc.getText().isEmpty());
+
+        return fullDesc.getText();
+    }
+    
+    @FindBy(xpath="(//span[contains(text(),\"Download Brochure\")])[3]")
+    private WebElement brochure;
+    public void clickDownloadBrochure() {
+    	wait.until(ExpectedConditions.elementToBeClickable(brochure));
+    	brochure.click();
+    }
+    
+    @FindBy(xpath="//input[@class=\"contact-form__input \"]")
+    private List<WebElement> formData;
+    public List<WebElement> getFormData(){
+    	return formData;
     }
 
     // ✅ No change needed - driver.getTitle() is always fresh

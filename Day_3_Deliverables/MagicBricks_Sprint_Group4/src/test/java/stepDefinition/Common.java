@@ -3,14 +3,16 @@ package stepDefinition;
 import java.time.Duration;
 import java.util.Set;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import pagesTanistha.HomePage;
 
-public class CommonSteps {
+public class Common {
 
     public static WebDriver driver;
     public static String parentWindow; // ✅ make static so ProjectSteps can access it
@@ -18,32 +20,10 @@ public class CommonSteps {
 
     @Given("I open the MagicBricks Kolkata residential real estate page")
     public void i_open_the_magic_bricks_kolkata_residential_real_estate_page() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://www.magicbricks.com/property-for-sale-rent-in-Kolkata/residential-real-estate-Kolkata");
-        home = new HomePage(driver); // ✅ initialize home AFTER driver is ready
+    	 Common.driver.get("https://www.magicbricks.com/property-for-sale-rent-in-Kolkata/residential-real-estate-Kolkata");
+    	    ((JavascriptExecutor) Common.driver).executeScript("window.focus();");
     }
-
-    @Given("I click on the {string} heading")
-    public void i_click_on_the_heading(String string) {
-        if (string.equalsIgnoreCase("Buy")) {
-            home.getBuyClick(); // ✅ home is now initialized, won't throw NullPointerException
-        }
-    }
-
-    @When("I click on {string} link")
-    public void i_click_on_link(String string) {
-        parentWindow = driver.getWindowHandle(); // ✅ save before new tab opens
-        if (string.equalsIgnoreCase("Find an Agent")) {
-            home.clickAgent();
-        } else if (string.equalsIgnoreCase("Localities in Kolkata")) {
-            home.clickLocality();
-        } else if (string.equalsIgnoreCase("Projects in Kolkata")) {
-            home.clickProjects(); // ✅ was wrongly calling clickAgent() instead
-        }
-    }
-
+    
     @Given("the new projects page loads with URL containing {string}")
     public void the_new_projects_page_loads_with_url_containing(String urlFragment) {
         // ✅ Switch to new tab that opened after Projects link click

@@ -1,4 +1,4 @@
-package stepDefinition;
+package StepDeifinitionLocal;
 
 import java.util.List;
 
@@ -10,6 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pagesTanistha.HomePage;
 import pagesTanistha.LocalityPage;
+import stepDefinition.Common;
 import utilities.ExcelUtil;
 
 public class LocalityStep {
@@ -20,18 +21,14 @@ public class LocalityStep {
 	  String parentWindow;
 	  String propertyTabWindow;
 	  
-	  public LocalityStep() {
-	      try {
-	    	  driver = CommonSteps.driver;
-	          }
-	      catch(Exception e) { // TODO Auto-generated catch block e.printStackTrace(); }
-	    	  e.printStackTrace();
-	      }
-	      home = new HomePage(CommonSteps.driver);
-	  }
-
+	  private void init() {
+		    if (driver == null) driver = Common.driver;
+		    if (home == null) home = new HomePage(driver);
+		}
+	  
 @Given("I navigate to the Localities in Kolkata page")
 public void i_navigate_to_the_localities_in_kolkata_page() {
+	init();
 	driver.get("https://www.magicbricks.com/localities-in-Kolkata");
     locality = new LocalityPage(driver);
 }
@@ -74,7 +71,8 @@ public void i_click_the_button_on_the_first_locality_card(String string) {
 
 @Then("the properties for the selected locality should be displayed")
 public void the_properties_for_the_selected_locality_should_be_displayed() {
-    // ✅ Explore opens in new tab - switch to it first
+    init();
+    
     String currentWindow = driver.getWindowHandle();
     for (String window : driver.getWindowHandles()) {
         if (!window.equals(currentWindow)) {

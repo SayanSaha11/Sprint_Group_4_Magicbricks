@@ -2,29 +2,28 @@ package hooks;
 
 import java.time.Duration;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import stepDefinition.Common;
 
 public class Hooks {
-	public static WebDriver driver;
-	
-	@Before
-	public void setup() {
-		driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		//driver.get("https://www.magicbricks.com/property-for-sale-rent-in-Kolkata/residential-real-estate-Kolkata");
-	}
 
-	@After
-	public void tearDown() {
-	    if (driver != null) {
-	        driver.quit();
-	        driver = null; // ✅ reset so next scenario gets a fresh browser
-	    }
-	}
+    @Before
+    public void setup() {
+        Common.driver = new ChromeDriver();
+
+        Common.driver.manage().window().maximize();
+        Common.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    }
+
+    @After
+    public void tearDown() {
+        if (Common.driver != null) {
+            Common.driver.quit();
+            Common.driver = null;
+        }
+    }
 }
