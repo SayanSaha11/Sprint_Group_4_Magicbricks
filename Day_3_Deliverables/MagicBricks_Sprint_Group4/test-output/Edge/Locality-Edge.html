@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Locality-Edge</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 28 21:23:28 IST 2026</td>
+<td>Started on:</td><td>Sat Mar 28 22:08:54 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65881 ms)</td>
+<tr><td>Total time:</td><td>98 seconds (98467 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,15 +76,100 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runnerFile.LocalityBuyRunner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.LocalityBuyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify autosuggestions and locality card on search", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
-<td></td>
-<td>59</td>
-<td>runnerFile.LocalityBuyRunner@3d1cfad4</td></tr>
+<td title='runnerFile_Tanistha.LocalityBuyRunner.runScenario()'><b>runScenario</b><br>Test class: runnerFile_Tanistha.LocalityBuyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify autosuggestions and locality card on search", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[EdgeDriver: MicrosoftEdge on windows (bcf33f3b0f54993e6b20d2cf291e8645)] -&gt; id: localityTypeValueSuggest]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.72, fedcm:accounts: true, goog:processID: 13896, ms:edgeOptions: {debuggerAddress: localhost:58492}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\TANISTHA\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58492/devtoo..., se:cdpVersion: 146.0.3856.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcf33f3b0f54993e6b20d2cf291e8645
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pagesTanistha.LocalityPage.getsuggestionList(LocalityPage.java:33)
+	at StepDeifinitionLocal_Tanistha.LocalityStep.the_autosuggestion_dropdown_should_appear(LocalityStep.java:91)
+	at ✽.the autosuggestion dropdown should appear(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Locality.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace657027251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace657027251'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[EdgeDriver: MicrosoftEdge on windows (bcf33f3b0f54993e6b20d2cf291e8645)] -&gt; id: localityTypeValueSuggest]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.72, fedcm:accounts: true, goog:processID: 13896, ms:edgeOptions: {debuggerAddress: localhost:58492}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\TANISTHA\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58492/devtoo..., se:cdpVersion: 146.0.3856.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcf33f3b0f54993e6b20d2cf291e8645
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pagesTanistha.LocalityPage.getsuggestionList(LocalityPage.java:33)
+	at StepDeifinitionLocal_Tanistha.LocalityStep.the_autosuggestion_dropdown_should_appear(LocalityStep.java:91)
+	at ✽.the autosuggestion dropdown should appear(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Locality.feature:9)
+</pre></div></td>
+<td>97</td>
+<td>runnerFile_Tanistha.LocalityBuyRunner@3d1cfad4</td></tr>
 <tr>
-<td title='runnerFile.LocalityBuyRunner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.LocalityBuyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Explore properties in selected locality", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
-<td></td>
-<td>64</td>
-<td>runnerFile.LocalityBuyRunner@3d1cfad4</td></tr>
+<td title='runnerFile_Tanistha.LocalityBuyRunner.runScenario()'><b>runScenario</b><br>Test class: runnerFile_Tanistha.LocalityBuyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Explore properties in selected locality", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=146.0.3856.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7546cf4995c7dba644448f9f070da830, isElementDisplayed {id=f.B1CE21B58BBA14B85A5910B4A3F5A238.d.219EB4D50617A5B46FBA2C043548C899.e.481}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.72, fedcm:accounts: true, goog:processID: 28584, ms:edgeOptions: {debuggerAddress: localhost:54629}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\TANISTHA\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54629/devtoo..., se:cdpVersion: 146.0.3856.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (7546cf4995c7dba644448f9f070da830)] -&gt; xpath: //a[@class=&apos;loc-card__title&apos;]]
+Session ID: 7546cf4995c7dba644448f9f070da830
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pagesTanistha.LocalityPage.getDataText(LocalityPage.java:40)
+	at StepDeifinitionLocal_Tanistha.LocalityStep.the_locality_card_title_should_be_displayed(LocalityStep.java:60)
+	at ✽.the locality card title should be displayed(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Locality.feature:20)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace663110621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace663110621'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=146.0.3856.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7546cf4995c7dba644448f9f070da830, isElementDisplayed {id=f.B1CE21B58BBA14B85A5910B4A3F5A238.d.219EB4D50617A5B46FBA2C043548C899.e.481}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.72, fedcm:accounts: true, goog:processID: 28584, ms:edgeOptions: {debuggerAddress: localhost:54629}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\TANISTHA\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54629/devtoo..., se:cdpVersion: 146.0.3856.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (7546cf4995c7dba644448f9f070da830)] -&gt; xpath: //a[@class=&apos;loc-card__title&apos;]]
+Session ID: 7546cf4995c7dba644448f9f070da830
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pagesTanistha.LocalityPage.getDataText(LocalityPage.java:40)
+	at StepDeifinitionLocal_Tanistha.LocalityStep.the_locality_card_title_should_be_displayed(LocalityStep.java:60)
+	at ✽.the locality card title should be displayed(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Locality.feature:20)
+</pre></div></td>
+<td>79</td>
+<td>runnerFile_Tanistha.LocalityBuyRunner@3d1cfad4</td></tr>
 </table><p>
 </body>
 </html>

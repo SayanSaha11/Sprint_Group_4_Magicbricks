@@ -4,14 +4,27 @@
   <test thread-count="5" parallel="tests" name="Buy-Edge(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="runnerFile.Runner">
+      <class name="runnerFile_Tanistha.Runner">
         <methods>
           <include name="setUpClass"/>
-          <include name="setBrowser"/>
-          <include name="runScenario" invocation-numbers="1 3 4"/>
+          <include name="runScenario" invocation-numbers="0 1 4 5"/>
           <include name="tearDownClass"/>
+          <include name="setBrowser"/>
         </methods>
-      </class> <!-- runnerFile.Runner -->
+      </class> <!-- runnerFile_Tanistha.Runner -->
     </classes>
   </test> <!-- Buy-Edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Locality-Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="runnerFile_Tanistha.LocalityBuyRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+          <include name="setBrowser"/>
+        </methods>
+      </class> <!-- runnerFile_Tanistha.LocalityBuyRunner -->
+    </classes>
+  </test> <!-- Locality-Edge(failed) -->
 </suite> <!-- Failed suite [Edge] -->

@@ -4,14 +4,14 @@
   <test thread-count="5" parallel="tests" name="Buy-Chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="runnerFile.Runner">
+      <class name="runnerFile_Tanistha.Runner">
         <methods>
           <include name="setUpClass"/>
-          <include name="setBrowser"/>
-          <include name="runScenario" invocation-numbers="2 3 5"/>
+          <include name="runScenario" invocation-numbers="0 1 5"/>
           <include name="tearDownClass"/>
+          <include name="setBrowser"/>
         </methods>
-      </class> <!-- runnerFile.Runner -->
+      </class> <!-- runnerFile_Tanistha.Runner -->
     </classes>
   </test> <!-- Buy-Chrome(failed) -->
 </suite> <!-- Failed suite [Chrome] -->

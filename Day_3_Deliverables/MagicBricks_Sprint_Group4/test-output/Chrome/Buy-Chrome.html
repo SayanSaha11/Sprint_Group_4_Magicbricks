@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 28 21:15:51 IST 2026</td>
+<td>Started on:</td><td>Sat Mar 28 22:11:29 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>110 seconds (110645 ms)</td>
+<tr><td>Total time:</td><td>100 seconds (100647 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,126 +76,89 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runnerFile.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply property type filter and verify results", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (717f0c0ae4fb5c7085d2f441a348737b)] -&gt; xpath: (//a[contains(text(),&apos;Projects in Kolkata&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
+<td title='runnerFile_Tanistha.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile_Tanistha.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fill and submit the contact agent form", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (28829034c185eab0fda09751dfac1b41)] -&gt; xpath: (//a[contains(text(),&apos;Find an Agent&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65130}, goog:processID: 25392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65130/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 717f0c0ae4fb5c7085d2f441a348737b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64325}, goog:processID: 15308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64325/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28829034c185eab0fda09751dfac1b41
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pagesTanistha.HomePage.clickProjects(HomePage.java:41)
-	at stepDefinition.BuyStep.i_click_on_link(BuyStep.java:68)
-	at ✽.I click on &quot;Projects in Kolkata&quot; link(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:33)
-</pre></div><a href='#' onClick='toggleBox("stack-trace469377385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace469377385'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (717f0c0ae4fb5c7085d2f441a348737b)] -&gt; xpath: (//a[contains(text(),&apos;Projects in Kolkata&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
+	at pagesTanistha.HomePage.clickAgent(HomePage.java:48)
+	at stepDefinition_Tanistha.BuyStep.i_click_on_link(BuyStep.java:62)
+	at ✽.I click on &quot;Find an Agent&quot; link(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:76)
+</pre></div><a href='#' onClick='toggleBox("stack-trace82915141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace82915141'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (28829034c185eab0fda09751dfac1b41)] -&gt; xpath: (//a[contains(text(),&apos;Find an Agent&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65130}, goog:processID: 25392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65130/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 717f0c0ae4fb5c7085d2f441a348737b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64325}, goog:processID: 15308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64325/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28829034c185eab0fda09751dfac1b41
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pagesTanistha.HomePage.clickProjects(HomePage.java:41)
-	at stepDefinition.BuyStep.i_click_on_link(BuyStep.java:68)
-	at ✽.I click on &quot;Projects in Kolkata&quot; link(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:33)
+	at pagesTanistha.HomePage.clickAgent(HomePage.java:48)
+	at stepDefinition_Tanistha.BuyStep.i_click_on_link(BuyStep.java:62)
+	at ✽.I click on &quot;Find an Agent&quot; link(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:76)
 </pre></div></td>
-<td>39</td>
-<td>runnerFile.Runner@4f67eb2a</td></tr>
+<td>38</td>
+<td>runnerFile_Tanistha.Runner@4f67eb2a</td></tr>
 <tr>
-<td title='runnerFile.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open first property and read the full description", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (1b4a6bcc32bb1929a75eb480e3ec24a0)] -&gt; xpath: (//div[contains(text(),&apos;₹10 Lac&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
+<td title='runnerFile_Tanistha.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile_Tanistha.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply budget filter and verify property listings are displayed", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (a520d0fb49eea270b48c82ae1d086ed0)] -&gt; xpath: (//div[contains(text(),&apos;₹10 Lac&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60959}, goog:processID: 12364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60959/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1b4a6bcc32bb1929a75eb480e3ec24a0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63607}, goog:processID: 30316, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63607/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a520d0fb49eea270b48c82ae1d086ed0
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pagesTanistha.HomePage.selectMinBudget(HomePage.java:84)
-	at stepDefinition.BuyStep.i_select_minimum_budget_as(BuyStep.java:260)
-	at ✽.I select minimum budget as &quot;10 Lac&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:47)
-</pre></div><a href='#' onClick='toggleBox("stack-trace210041314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace210041314'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (1b4a6bcc32bb1929a75eb480e3ec24a0)] -&gt; xpath: (//div[contains(text(),&apos;₹10 Lac&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
+	at pagesTanistha.HomePage.selectMinBudget(HomePage.java:85)
+	at stepDefinition_Tanistha.BuyStep.i_select_minimum_budget_as(BuyStep.java:260)
+	at ✽.I select minimum budget as &quot;10 Lac&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace350826719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace350826719'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (a520d0fb49eea270b48c82ae1d086ed0)] -&gt; xpath: (//div[contains(text(),&apos;₹10 Lac&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60959}, goog:processID: 12364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60959/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1b4a6bcc32bb1929a75eb480e3ec24a0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63607}, goog:processID: 30316, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63607/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a520d0fb49eea270b48c82ae1d086ed0
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pagesTanistha.HomePage.selectMinBudget(HomePage.java:84)
-	at stepDefinition.BuyStep.i_select_minimum_budget_as(BuyStep.java:260)
-	at ✽.I select minimum budget as &quot;10 Lac&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:47)
+	at pagesTanistha.HomePage.selectMinBudget(HomePage.java:85)
+	at stepDefinition_Tanistha.BuyStep.i_select_minimum_budget_as(BuyStep.java:260)
+	at ✽.I select minimum budget as &quot;10 Lac&quot;(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:10)
 </pre></div></td>
 <td>40</td>
-<td>runnerFile.Runner@4f67eb2a</td></tr>
+<td>runnerFile_Tanistha.Runner@4f67eb2a</td></tr>
 <tr>
-<td title='runnerFile.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fill and submit the contact agent form", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=146.0.7680.165)
+<td title='runnerFile_Tanistha.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile_Tanistha.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View featured developer details and browse project listings", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (0bd0396420417b5750df7c9c8316cbb8)] -&gt; xpath: (//a[contains(text(),&apos;Projects in Kolkata&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25854578ee57a2aca4a356d20aff76a9, findElement {value=//a[contains(text(),&apos;Verify&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63183}, goog:processID: 17028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63183/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 25854578ee57a2aca4a356d20aff76a9
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:198)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:632)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:629)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pagesTanistha.AgentPage.handleOTP(AgentPage.java:89)
-	at stepDefinition.BuyStep.i_complete_the_otp_verification(BuyStep.java:167)
-	at ✽.I complete the OTP verification(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:84)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace194207903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace194207903'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=146.0.7680.165)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65220}, goog:processID: 2076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65220/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0bd0396420417b5750df7c9c8316cbb8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pagesTanistha.HomePage.clickProjects(HomePage.java:41)
+	at stepDefinition_Tanistha.BuyStep.i_click_on_link(BuyStep.java:68)
+	at ✽.I click on &quot;Projects in Kolkata&quot; link(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1166163050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1166163050'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (0bd0396420417b5750df7c9c8316cbb8)] -&gt; xpath: (//a[contains(text(),&apos;Projects in Kolkata&apos;)])[1]] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25854578ee57a2aca4a356d20aff76a9, findElement {value=//a[contains(text(),&apos;Verify&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63183}, goog:processID: 17028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63183/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 25854578ee57a2aca4a356d20aff76a9
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:198)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:632)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:629)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pagesTanistha.AgentPage.handleOTP(AgentPage.java:89)
-	at stepDefinition.BuyStep.i_complete_the_otp_verification(BuyStep.java:167)
-	at ✽.I complete the OTP verification(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:84)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\TANISTHA\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65220}, goog:processID: 2076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65220/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0bd0396420417b5750df7c9c8316cbb8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pagesTanistha.HomePage.clickProjects(HomePage.java:41)
+	at stepDefinition_Tanistha.BuyStep.i_click_on_link(BuyStep.java:68)
+	at ✽.I click on &quot;Projects in Kolkata&quot; link(file:///C:/Users/TANISTHA/git/MagicBricks/Day_3_Deliverables/MagicBricks_Sprint_Group4/src/test/java/featureFile/Buy.feature:22)
 </pre></div></td>
-<td>109</td>
-<td>runnerFile.Runner@4f67eb2a</td></tr>
+<td>42</td>
+<td>runnerFile_Tanistha.Runner@4f67eb2a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -206,20 +169,20 @@ Session ID: 25854578ee57a2aca4a356d20aff76a9
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runnerFile.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View featured developer details and browse project listings", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
+<td title='runnerFile_Tanistha.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile_Tanistha.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply property type filter and verify results", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
 <td></td>
-<td>44</td>
-<td>runnerFile.Runner@4f67eb2a</td></tr>
+<td>54</td>
+<td>runnerFile_Tanistha.Runner@4f67eb2a</td></tr>
 <tr>
-<td title='runnerFile.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View details of the first listed agent", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
+<td title='runnerFile_Tanistha.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile_Tanistha.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open first property and read the full description", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
 <td></td>
-<td>47</td>
-<td>runnerFile.Runner@4f67eb2a</td></tr>
+<td>99</td>
+<td>runnerFile_Tanistha.Runner@4f67eb2a</td></tr>
 <tr>
-<td title='runnerFile.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply budget filter and verify property listings are displayed", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
+<td title='runnerFile_Tanistha.Runner.runScenario()'><b>runScenario</b><br>Test class: runnerFile_Tanistha.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View details of the first listed agent", "MagicBricks Kolkata - Property Search, Projects, Localities and Agent Features"</td>
 <td></td>
-<td>45</td>
-<td>runnerFile.Runner@4f67eb2a</td></tr>
+<td>72</td>
+<td>runnerFile_Tanistha.Runner@4f67eb2a</td></tr>
 </table><p>
 </body>
 </html>
