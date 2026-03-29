@@ -6,11 +6,14 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtil {
-	
+
 	/*
 	 * private static final String FILE_PATH = System.getProperty("user.dir") +
 	 * "/src/testdata_Tanistha.xlsx";
 	 */
+	private static final String FILE_PATH = System.getProperty("user.dir") 
+            + "/src/testdata_Tanistha.xlsx";
+
     //C:\Users\TANISTHA\git\MagicBricks\Day_3_Deliverables\MagicBricks_Sprint_Group4\src\testdata_Tanistha.xlsx
 
     public static String getCellData(String sheetname,int row, int col) {
@@ -27,5 +30,4 @@ public class ExcelUtil {
         	//System.out.println("Wrong");
         }
     }
-    
 }

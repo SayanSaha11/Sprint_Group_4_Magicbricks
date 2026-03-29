@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="CrossBrowserParallelSuite" verbose="1">
+
+    <!-- Chrome suite runs first, then Edge -->
+    <suite-files>
+        <suite-file path="testng-chrome_Tanistha.xml"/>
+        <suite-file path="testng-edge_Tanistha.xml"/>
+    </suite-files>
+
+</suite>

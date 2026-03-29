@@ -1,0 +1,324 @@
+<html>
+<head>
+<title>TestNG:  Chrome-Suite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome-Suite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 28 23:28:14 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>255 seconds (255989 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.runner_sayan.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.runner_sayan.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC14 - Office Space listings are shown and Contact Agent button is clickable", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25005218e166f8fd0ec7b002a420d1b0, get {url=https://www.magicbricks.com/property-for-sale-rent-in-Mumbai/residential-real-estate-Mumbai}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58658}, goog:processID: 1460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58658/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25005218e166f8fd0ec7b002a420d1b0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:329)
+	at pages.pages_sayan.HomePage.openHomePage(HomePage.java:92)
+	at pages.pages_sayan.HomePage.openMumbaiPage(HomePage.java:98)
+	at stepDefinitions.stepDefinitions_sayan.MagicBricksStepDefinitions.the_user_is_on_the_MagicBricks_Mumbai_residential_page(MagicBricksStepDefinitions.java:68)
+	at ✽.the user is on the MagicBricks Mumbai residential page(file:///F:/Sprint_Group_4_Magicbricks/Day_6_Deliverables/MagicBricks/src/test/resources/features/features_sayan/MagicBricks.feature:7)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace172532745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace172532745'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25005218e166f8fd0ec7b002a420d1b0, get {url=https://www.magicbricks.com/property-for-sale-rent-in-Mumbai/residential-real-estate-Mumbai}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58658}, goog:processID: 1460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58658/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25005218e166f8fd0ec7b002a420d1b0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:329)
+	at pages.pages_sayan.HomePage.openHomePage(HomePage.java:92)
+	at pages.pages_sayan.HomePage.openMumbaiPage(HomePage.java:98)
+	at stepDefinitions.stepDefinitions_sayan.MagicBricksStepDefinitions.the_user_is_on_the_MagicBricks_Mumbai_residential_page(MagicBricksStepDefinitions.java:68)
+	at ✽.the user is on the MagicBricks Mumbai residential page(file:///F:/Sprint_Group_4_Magicbricks/Day_6_Deliverables/MagicBricks/src/test/resources/features/features_sayan/MagicBricks.feature:7)
+</pre></div></td>
+<td>14</td>
+<td>runner.runner_sayan.TestRunner@707194ba</td></tr>
+<tr>
+<td title='runner.runner_sayan.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.runner_sayan.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC12 - Plot listings have no BHK filter and area budget filter works correctly", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for pages.pages_sayan.BasePage$$Lambda/0x0000024fcf455918@37666de7 (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.pages_sayan.BasePage.staleSafeVisible(BasePage.java:87)
+	at pages.pages_sayan.BasePage.waitVisible(BasePage.java:60)
+	at pages.pages_sayan.HomePage.openHomePage(HomePage.java:94)
+	at pages.pages_sayan.HomePage.openMumbaiPage(HomePage.java:98)
+	at stepDefinitions.stepDefinitions_sayan.MagicBricksStepDefinitions.the_user_is_on_the_MagicBricks_Mumbai_residential_page(MagicBricksStepDefinitions.java:68)
+	at ✽.the user is on the MagicBricks Mumbai residential page(file:///F:/Sprint_Group_4_Magicbricks/Day_6_Deliverables/MagicBricks/src/test/resources/features/features_sayan/MagicBricks.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;buyheading&apos;]&quot;}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [015145cb82f38f40fc9fb3003cd2acf4, findElement {using=xpath, value=//a[@id=&apos;buyheading&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56161}, goog:processID: 12940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56161/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 015145cb82f38f40fc9fb3003cd2acf4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at pages.pages_sayan.BasePage.lambda$1(BasePage.java:90)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 6 more
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace980409677", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace980409677'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for pages.pages_sayan.BasePage$$Lambda/0x0000024fcf455918@37666de7 (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.pages_sayan.BasePage.staleSafeVisible(BasePage.java:87)
+	at pages.pages_sayan.BasePage.waitVisible(BasePage.java:60)
+	at pages.pages_sayan.HomePage.openHomePage(HomePage.java:94)
+	at pages.pages_sayan.HomePage.openMumbaiPage(HomePage.java:98)
+	at stepDefinitions.stepDefinitions_sayan.MagicBricksStepDefinitions.the_user_is_on_the_MagicBricks_Mumbai_residential_page(MagicBricksStepDefinitions.java:68)
+	at ✽.the user is on the MagicBricks Mumbai residential page(file:///F:/Sprint_Group_4_Magicbricks/Day_6_Deliverables/MagicBricks/src/test/resources/features/features_sayan/MagicBricks.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;buyheading&apos;]&quot;}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [015145cb82f38f40fc9fb3003cd2acf4, findElement {using=xpath, value=//a[@id=&apos;buyheading&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56161}, goog:processID: 12940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56161/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 015145cb82f38f40fc9fb3003cd2acf4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at pages.pages_sayan.BasePage.lambda$1(BasePage.java:90)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 6 more
+</pre></div></td>
+<td>58</td>
+<td>runner.runner_sayan.TestRunner@707194ba</td></tr>
+<tr>
+<td title='runner.runner_sayan.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.runner_sayan.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC10 - House for Sale listings shown and Map View renders property location correctly", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef7325d0bdd5b7a6fdfb54442a572969, get {url=https://www.magicbricks.com/property-for-sale-rent-in-Mumbai/residential-real-estate-Mumbai}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57495}, goog:processID: 20488, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57495/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef7325d0bdd5b7a6fdfb54442a572969
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:329)
+	at pages.pages_sayan.HomePage.openHomePage(HomePage.java:92)
+	at pages.pages_sayan.HomePage.openMumbaiPage(HomePage.java:98)
+	at stepDefinitions.stepDefinitions_sayan.MagicBricksStepDefinitions.the_user_is_on_the_MagicBricks_Mumbai_residential_page(MagicBricksStepDefinitions.java:68)
+	at ✽.the user is on the MagicBricks Mumbai residential page(file:///F:/Sprint_Group_4_Magicbricks/Day_6_Deliverables/MagicBricks/src/test/resources/features/features_sayan/MagicBricks.feature:7)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace224327879", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace224327879'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef7325d0bdd5b7a6fdfb54442a572969, get {url=https://www.magicbricks.com/property-for-sale-rent-in-Mumbai/residential-real-estate-Mumbai}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57495}, goog:processID: 20488, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57495/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef7325d0bdd5b7a6fdfb54442a572969
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:329)
+	at pages.pages_sayan.HomePage.openHomePage(HomePage.java:92)
+	at pages.pages_sayan.HomePage.openMumbaiPage(HomePage.java:98)
+	at stepDefinitions.stepDefinitions_sayan.MagicBricksStepDefinitions.the_user_is_on_the_MagicBricks_Mumbai_residential_page(MagicBricksStepDefinitions.java:68)
+	at ✽.the user is on the MagicBricks Mumbai residential page(file:///F:/Sprint_Group_4_Magicbricks/Day_6_Deliverables/MagicBricks/src/test/resources/features/features_sayan/MagicBricks.feature:7)
+</pre></div></td>
+<td>36</td>
+<td>runner.runner_sayan.TestRunner@707194ba</td></tr>
+<tr>
+<td title='runner.runner_sayan.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.runner_sayan.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC16 - Commercial Space supports sub-type filter and sort by price high to low", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7f20db0c17b433e75bf94ca2c6dc93b4, get {url=https://www.magicbricks.com/property-for-sale-rent-in-Mumbai/residential-real-estate-Mumbai}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57984}, goog:processID: 1056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57984/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f20db0c17b433e75bf94ca2c6dc93b4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:329)
+	at pages.pages_sayan.HomePage.openHomePage(HomePage.java:92)
+	at pages.pages_sayan.HomePage.openMumbaiPage(HomePage.java:98)
+	at stepDefinitions.stepDefinitions_sayan.MagicBricksStepDefinitions.the_user_is_on_the_MagicBricks_Mumbai_residential_page(MagicBricksStepDefinitions.java:68)
+	at ✽.the user is on the MagicBricks Mumbai residential page(file:///F:/Sprint_Group_4_Magicbricks/Day_6_Deliverables/MagicBricks/src/test/resources/features/features_sayan/MagicBricks.feature:7)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1024288160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1024288160'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7f20db0c17b433e75bf94ca2c6dc93b4, get {url=https://www.magicbricks.com/property-for-sale-rent-in-Mumbai/residential-real-estate-Mumbai}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57984}, goog:processID: 1056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57984/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f20db0c17b433e75bf94ca2c6dc93b4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:329)
+	at pages.pages_sayan.HomePage.openHomePage(HomePage.java:92)
+	at pages.pages_sayan.HomePage.openMumbaiPage(HomePage.java:98)
+	at stepDefinitions.stepDefinitions_sayan.MagicBricksStepDefinitions.the_user_is_on_the_MagicBricks_Mumbai_residential_page(MagicBricksStepDefinitions.java:68)
+	at ✽.the user is on the MagicBricks Mumbai residential page(file:///F:/Sprint_Group_4_Magicbricks/Day_6_Deliverables/MagicBricks/src/test/resources/features/features_sayan/MagicBricks.feature:7)
+</pre></div></td>
+<td>34</td>
+<td>runner.runner_sayan.TestRunner@707194ba</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.runner_sayan.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.runner_sayan.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC06 - Premium Homes listings are displayed and image gallery navigates correctly", "MagicBricks Buy Module Functional Validation"</td>
+<td></td>
+<td>23</td>
+<td>runner.runner_sayan.TestRunner@707194ba</td></tr>
+<tr>
+<td title='runner.runner_sayan.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.runner_sayan.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC04 - Budget Homes listings display prices within ceiling and EMI Calculator computes correctly", "MagicBricks Buy Module Functional Validation"</td>
+<td></td>
+<td>37</td>
+<td>runner.runner_sayan.TestRunner@707194ba</td></tr>
+<tr>
+<td title='runner.runner_sayan.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.runner_sayan.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC07 - New Projects display mandatory fields and enquiry form submits successfully", "MagicBricks Buy Module Functional Validation"</td>
+<td></td>
+<td>48</td>
+<td>runner.runner_sayan.TestRunner@707194ba</td></tr>
+</table><p>
+</body>
+</html>

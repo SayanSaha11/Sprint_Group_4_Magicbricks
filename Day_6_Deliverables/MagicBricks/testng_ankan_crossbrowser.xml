@@ -2,7 +2,7 @@
 <suite name="Ankan CrossBrowser Suite"
        parallel="tests"
        thread-count="2"
-       data-provider-thread-count="1">
+       data-provider-thread-count="2">
 
     <!-- ===== ANKAN'S TESTS ===== -->
     <test name="Ankan Chrome Tests">

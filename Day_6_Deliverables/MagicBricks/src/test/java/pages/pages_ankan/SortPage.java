@@ -46,9 +46,9 @@ public class SortPage extends BasePage {
         postedByFilter.click();
         Thread.sleep(7000);
         ownersLabel.click();
-        Thread.sleep(11000);
+        Thread.sleep(9000);
         driver.findElement(org.openqa.selenium.By.tagName("body")).click();
-        Thread.sleep(11000);
+        Thread.sleep(9000);
     }
 
     public void sortByPriceLowToHigh() throws InterruptedException {

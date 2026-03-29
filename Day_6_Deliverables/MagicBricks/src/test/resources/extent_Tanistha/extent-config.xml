@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extentreports>
+    <configuration>
+       
+        <theme>DARK</theme>
+
+        <documentTitle>MagicBricks QA Report</documentTitle>
+
+        <reportName>Cross Browser Parallel Execution</reportName>
+
+        <timeStampFormat>dd-MM-yyyy HH:mm:ss</timeStampFormat>
+
+        <!-- ✅ Custom CSS to change colors -->
+        <css>
+            /* Top navigation bar color */
+            .nav-wrapper { background-color: #c0392b !important; }
+
+            /* Sidebar color */
+            nav.nav-extended { background-color: #c0392b !important; }
+
+            /* Pass color — green */
+            .badge.green { background-color: #27ae60 !important; }
+
+            /* Fail color — red */
+            .badge.red { background-color: #e74c3c !important; }
+
+            /* Dashboard card headers */
+            .card-panel.white { border-top: 3px solid #c0392b !important; }
+
+            /* Report title text color */
+            .report-name { color: #ffffff !important; font-weight: bold; }
+        </css>
+
+    </configuration>
+</extentreports>
