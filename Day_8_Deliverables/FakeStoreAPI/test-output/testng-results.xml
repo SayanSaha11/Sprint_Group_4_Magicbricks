@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-30T15:16:58 IST" name="FakeStore API Suite" finished-at="2026-03-30T15:17:15 IST" duration-ms="17606">
+    <groups>
+    </groups>
+    <test started-at="2026-03-30T15:16:58 IST" name="Auth" finished-at="2026-03-30T15:17:03 IST" duration-ms="5625">
+      <class name="tests.AuthTests">
+        <test-method signature="TC_AUTH_01_validCredentials_return200WithToken()[pri:1, instance:tests.AuthTests@5a5a729f]" started-at="2026-03-30T15:16:58 IST" name="TC_AUTH_01_validCredentials_return200WithToken" finished-at="2026-03-30T15:17:02 IST" duration-ms="4220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_AUTH_01_validCredentials_return200WithToken -->
+        <test-method signature="TC_AUTH_02_loginResponse_tokenIsNonBlankString()[pri:2, instance:tests.AuthTests@5a5a729f]" started-at="2026-03-30T15:17:02 IST" name="TC_AUTH_02_loginResponse_tokenIsNonBlankString" finished-at="2026-03-30T15:17:03 IST" duration-ms="1256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_AUTH_02_loginResponse_tokenIsNonBlankString -->
+      </class> <!-- tests.AuthTests -->
+    </test> <!-- Auth -->
+    <test started-at="2026-03-30T15:17:03 IST" name="Products" finished-at="2026-03-30T15:17:07 IST" duration-ms="3833">
+      <class name="tests.ProductTests">
+        <test-method signature="TC_PROD_01_getAllProducts_return200WithFullList()[pri:1, instance:tests.ProductTests@448c8166]" started-at="2026-03-30T15:17:03 IST" name="TC_PROD_01_getAllProducts_return200WithFullList" finished-at="2026-03-30T15:17:04 IST" duration-ms="859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PROD_01_getAllProducts_return200WithFullList -->
+        <test-method signature="TC_PROD_02_getProductById_returnCorrectProductWithRating()[pri:2, instance:tests.ProductTests@448c8166]" started-at="2026-03-30T15:17:04 IST" name="TC_PROD_02_getProductById_returnCorrectProductWithRating" finished-at="2026-03-30T15:17:05 IST" duration-ms="921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PROD_02_getProductById_returnCorrectProductWithRating -->
+        <test-method signature="TC_PROD_03_createProduct_return201WithEchoedProduct()[pri:3, instance:tests.ProductTests@448c8166]" started-at="2026-03-30T15:17:05 IST" name="TC_PROD_03_createProduct_return201WithEchoedProduct" finished-at="2026-03-30T15:17:06 IST" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PROD_03_createProduct_return201WithEchoedProduct -->
+        <test-method signature="TC_PROD_04_updateProduct_return200WithUpdatedFields()[pri:4, instance:tests.ProductTests@448c8166]" started-at="2026-03-30T15:17:06 IST" name="TC_PROD_04_updateProduct_return200WithUpdatedFields" finished-at="2026-03-30T15:17:07 IST" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PROD_04_updateProduct_return200WithUpdatedFields -->
+        <test-method signature="TC_PROD_05_deleteProduct_return200WithDeletedProduct()[pri:5, instance:tests.ProductTests@448c8166]" started-at="2026-03-30T15:17:07 IST" name="TC_PROD_05_deleteProduct_return200WithDeletedProduct" finished-at="2026-03-30T15:17:07 IST" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PROD_05_deleteProduct_return200WithDeletedProduct -->
+      </class> <!-- tests.ProductTests -->
+    </test> <!-- Products -->
+    <test started-at="2026-03-30T15:17:07 IST" name="Users" finished-at="2026-03-30T15:17:12 IST" duration-ms="4290">
+      <class name="tests.UserTests">
+        <test-method signature="TC_USER_01_getAllUsers_return200WithFullList()[pri:1, instance:tests.UserTests@3bcd05cb]" started-at="2026-03-30T15:17:07 IST" name="TC_USER_01_getAllUsers_return200WithFullList" finished-at="2026-03-30T15:17:08 IST" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_USER_01_getAllUsers_return200WithFullList -->
+        <test-method signature="TC_USER_02_getUserById_returnCorrectUserWithAllNestedFields()[pri:2, instance:tests.UserTests@3bcd05cb]" started-at="2026-03-30T15:17:08 IST" name="TC_USER_02_getUserById_returnCorrectUserWithAllNestedFields" finished-at="2026-03-30T15:17:09 IST" duration-ms="1202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_USER_02_getUserById_returnCorrectUserWithAllNestedFields -->
+        <test-method signature="TC_USER_03_createUser_return201WithCreatedUser()[pri:3, instance:tests.UserTests@3bcd05cb]" started-at="2026-03-30T15:17:09 IST" name="TC_USER_03_createUser_return201WithCreatedUser" finished-at="2026-03-30T15:17:10 IST" duration-ms="815" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path username doesn't match.
+Expected: 1
+  Actual: null
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path username doesn't match.
+Expected: 1
+  Actual: null
+
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:274)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.selectMethod(IndyInterface.java:373)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:121)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at tests.UserTests.TC_USER_03_createUser_return201WithCreatedUser(UserTests.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_USER_03_createUser_return201WithCreatedUser -->
+        <test-method signature="TC_USER_04_updateUser_return200WithUpdatedFields()[pri:4, instance:tests.UserTests@3bcd05cb]" started-at="2026-03-30T15:17:10 IST" name="TC_USER_04_updateUser_return200WithUpdatedFields" finished-at="2026-03-30T15:17:11 IST" duration-ms="582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_USER_04_updateUser_return200WithUpdatedFields -->
+        <test-method signature="TC_USER_05_deleteUser_return200WithDeletedUserObject()[pri:5, instance:tests.UserTests@3bcd05cb]" started-at="2026-03-30T15:17:11 IST" name="TC_USER_05_deleteUser_return200WithDeletedUserObject" finished-at="2026-03-30T15:17:12 IST" duration-ms="722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_USER_05_deleteUser_return200WithDeletedUserObject -->
+      </class> <!-- tests.UserTests -->
+    </test> <!-- Users -->
+    <test started-at="2026-03-30T15:17:12 IST" name="Carts" finished-at="2026-03-30T15:17:15 IST" duration-ms="3777">
+      <class name="tests.CartTests">
+        <test-method is-config="true" signature="initSuite()[pri:0, instance:tests.CartTests@1a5a4e19]" started-at="2026-03-30T15:16:57 IST" name="initSuite" finished-at="2026-03-30T15:16:58 IST" duration-ms="1020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSuite -->
+        <test-method signature="TC_CART_01_getAllCarts_return200WithFullList()[pri:1, instance:tests.CartTests@1a5a4e19]" started-at="2026-03-30T15:17:12 IST" name="TC_CART_01_getAllCarts_return200WithFullList" finished-at="2026-03-30T15:17:13 IST" duration-ms="932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CART_01_getAllCarts_return200WithFullList -->
+        <test-method signature="TC_CART_02_getCartById_returnCorrectCartWithAllFields()[pri:2, instance:tests.CartTests@1a5a4e19]" started-at="2026-03-30T15:17:13 IST" name="TC_CART_02_getCartById_returnCorrectCartWithAllFields" finished-at="2026-03-30T15:17:13 IST" duration-ms="879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CART_02_getCartById_returnCorrectCartWithAllFields -->
+        <test-method signature="TC_CART_03_createCart_return201WithCreatedCart()[pri:3, instance:tests.CartTests@1a5a4e19]" started-at="2026-03-30T15:17:13 IST" name="TC_CART_03_createCart_return201WithCreatedCart" finished-at="2026-03-30T15:17:14 IST" duration-ms="598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CART_03_createCart_return201WithCreatedCart -->
+        <test-method signature="TC_CART_04_updateCart_return200WithUpdatedFields()[pri:4, instance:tests.CartTests@1a5a4e19]" started-at="2026-03-30T15:17:14 IST" name="TC_CART_04_updateCart_return200WithUpdatedFields" finished-at="2026-03-30T15:17:15 IST" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CART_04_updateCart_return200WithUpdatedFields -->
+        <test-method signature="TC_CART_05_deleteCart_return200WithDeletedCartObject()[pri:5, instance:tests.CartTests@1a5a4e19]" started-at="2026-03-30T15:17:15 IST" name="TC_CART_05_deleteCart_return200WithDeletedCartObject" finished-at="2026-03-30T15:17:15 IST" duration-ms="735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CART_05_deleteCart_return200WithDeletedCartObject -->
+      </class> <!-- tests.CartTests -->
+    </test> <!-- Carts -->
+  </suite> <!-- FakeStore API Suite -->
+</testng-results>

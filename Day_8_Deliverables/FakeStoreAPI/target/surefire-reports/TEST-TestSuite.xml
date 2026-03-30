@@ -1,0 +1,1587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="17.421" tests="17" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="F:\API_Sprint\FakeStoreAPI\target\test-classes;F:\API_Sprint\FakeStoreAPI\target\classes;C:\Users\sayan\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\sayan\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\sayan\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\sayan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sayan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\sayan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sayan\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\sayan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\sayan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sayan\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\sayan\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\sayan\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\sayan\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\sayan\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\sayan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\sayan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\sayan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\sayan\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\sayan\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\sayan\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\sayan\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\sayan\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\sayan\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\sayan\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\sayan\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\sayan\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\sayan\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\sayan\AppData\Local\Temp\surefire10870526642163485441\surefirebooter-20260329203031569_3.jar C:\Users\sayan\AppData\Local\Temp\surefire10870526642163485441 2026-03-29T20-30-31_376-jvmRun1 surefire-20260329203031569_1tmp surefire_0-20260329203031569_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="F:\API_Sprint\FakeStoreAPI\target\test-classes;F:\API_Sprint\FakeStoreAPI\target\classes;C:\Users\sayan\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\sayan\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\sayan\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\sayan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sayan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\sayan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sayan\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\sayan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\sayan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sayan\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\sayan\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\sayan\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\sayan\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\sayan\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\sayan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\sayan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\sayan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\sayan\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\sayan\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\sayan\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\sayan\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\sayan\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\sayan\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\sayan\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\sayan\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\sayan\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\sayan\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sayan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="F:\API_Sprint\FakeStoreAPI"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\sayan\AppData\Local\Temp\surefire10870526642163485441\surefirebooter-20260329203031569_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.name" value="sayan"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\sayan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\sayan\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="F:\API_Sprint\FakeStoreAPI"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\OracleXE213\dbhomeXE\bin;C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\MinGW\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-24\bin;C:\gradle-8.14.2\bin;C:\Program Files\Notepad++\notepad++.exe;C:\Program Files\Java\jdk-25.0.2\bin;C:\Program Files\Git\cmd;C:\Users\sayan\Downloads\apache-maven-3.9.12-bin\apache-maven-3.9.12\bin;C:\ProgramData\anaconda3\Library\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sayan\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;C:\Users\sayan\AppData\Local\GitHubDesktop\bin;D:\Microsoft VS Code\bin;C:\Users\sayan\AppData\Roaming\npm;C:\Users\sayan\AppData\Local\Programs\Ollama;C:\Users\sayan\AppData\Local\Microsoft\WinGet\Packages\SQLite.SQLite_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.2\bin;;C:\Users\sayan\Downloads\apache-maven-3.9.12-bin\apache-maven-3.9.12\bin;C:\Program Files\Java\jdk-24\bin;C:\ProgramData\anaconda3\Library\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="TC_AUTH_01_validCredentials_return200WithToken" classname="tests.AuthTests" time="3.815">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;401&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at tests.AuthTests.TC_AUTH_01_validCredentials_return200WithToken(AuthTests.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://fakestoreapi.com/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "sayansaha",
+    "password": "sayan123"
+}
+HTTP/1.1 401 Unauthorized
+Date: Sun, 29 Mar 2026 15:00:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"21-kqEUlF5d6RRpf3XO8rj97canyAM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kV%2F%2B8fBMNeR%2Bd7VGX4UxYmTX7ZxuXdinMau0sR6dJwXgEthXg50QAFy2rQ%2FBOUJQ6gAJaPDtcrVcwhQTR2PnoVEH80Rzo%2B7EHmsX%2BmBxw%2BwfZK2MCY8DTzIRLna3JEm3Yo4y"}]}
+Server: cloudflare
+CF-RAY: 9e3fbeba3843d966-BOM
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>username or password is incorrect</body>
+</html>
+]]></system-out>
+  </testcase>
+  <testcase name="TC_AUTH_02_loginResponse_tokenIsNonBlankString" classname="tests.AuthTests" time="1.294">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;401&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at tests.AuthTests.TC_AUTH_02_loginResponse_tokenIsNonBlankString(AuthTests.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://fakestoreapi.com/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "sayansaha",
+    "password": "sayan123"
+}
+HTTP/1.1 401 Unauthorized
+Date: Sun, 29 Mar 2026 15:00:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"21-kqEUlF5d6RRpf3XO8rj97canyAM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RBMGteOGBq77nd%2B2k8UzNrBOsxQGcAo7iCVmHxL0rYTRr6ANlpu9SdOtbWmWdeMexsmxisGobeAxtun8HCb7z59Kl%2BC8gJWk8OITestXe6weJfayRXm2xEInqwy9ajt8Pr8H"}]}
+Server: cloudflare
+CF-RAY: 9e3fbec47e093a19-BOM
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>username or password is incorrect</body>
+</html>
+]]></system-out>
+  </testcase>
+  <testcase name="TC_PROD_01_getAllProducts_return200WithFullList" classname="tests.ProductTests" time="1.169">
+    <failure message="class java.lang.Float cannot be cast to class java.lang.Integer (java.lang.Float and java.lang.Integer are in module java.base of loader &apos;bootstrap&apos;)" type="java.lang.ClassCastException"><![CDATA[java.lang.ClassCastException: class java.lang.Float cannot be cast to class java.lang.Integer (java.lang.Float and java.lang.Integer are in module java.base of loader 'bootstrap')
+	at java.base/java.lang.Integer.compareTo(Integer.java:72)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$1.compare(ComparatorMatcherBuilder.java:29)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$1.compare(ComparatorMatcherBuilder.java:26)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$ComparatorMatcher.describeMismatchSafely(ComparatorMatcherBuilder.java:96)
+	at org.hamcrest.TypeSafeMatcher.describeMismatch(TypeSafeMatcher.java:98)
+	at org.hamcrest.core.Every.matchesSafely(Every.java:20)
+	at org.hamcrest.core.Every.matchesSafely(Every.java:7)
+	at org.hamcrest.TypeSafeDiagnosingMatcher.matches(TypeSafeDiagnosingMatcher.java:66)
+	at io.restassured.internal.assertion.BodyMatcher.validate(BodyMatcher.java:106)
+	at io.restassured.internal.assertion.BodyMatcherGroup.lambda$validate$0(BodyMatcherGroup.java:30)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.restassured.internal.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.java:30)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:503)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:274)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:121)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at tests.ProductTests.TC_PROD_01_getAllProducts_return200WithFullList(ProductTests.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"2990-lZ2o94A2EDKiYW3/6/3oI74HHkw"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=IaRaMOc0A1MaRbfauqsuKlAAlMWsT8N57GoyqvejCOYpXmD7gTTtlEvNCd2boG9dldBSnH115QqS7GG3SPULNqG5ItPipOJnBjIpw7A3OfU9VCFkQhdssW4QoqLPywa12V64"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbecd28e53a1c-BOM
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+        "rating": {
+            "rate": 3.9,
+            "count": 120
+        }
+    },
+    {
+        "id": 2,
+        "title": "Mens Casual Premium Slim Fit T-Shirts ",
+        "price": 22.3,
+        "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+        "rating": {
+            "rate": 4.1,
+            "count": 259
+        }
+    },
+    {
+        "id": 3,
+        "title": "Mens Cotton Jacket",
+        "price": 55.99,
+        "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    },
+    {
+        "id": 4,
+        "title": "Mens Casual Slim Fit",
+        "price": 15.99,
+        "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+        "rating": {
+            "rate": 2.1,
+            "count": 430
+        }
+    },
+    {
+        "id": 5,
+        "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+        "price": 695,
+        "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+        "category": "jewelery",
+        "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+        "rating": {
+            "rate": 4.6,
+            "count": 400
+        }
+    },
+    {
+        "id": 6,
+        "title": "Solid Gold Petite Micropave ",
+        "price": 168,
+        "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+        "category": "jewelery",
+        "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
+        "rating": {
+            "rate": 3.9,
+            "count": 70
+        }
+    },
+    {
+        "id": 7,
+        "title": "White Gold Plated Princess",
+        "price": 9.99,
+        "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+        "category": "jewelery",
+        "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
+        "rating": {
+            "rate": 3,
+            "count": 400
+        }
+    },
+    {
+        "id": 8,
+        "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+        "price": 10.99,
+        "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+        "category": "jewelery",
+        "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png",
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
+    },
+    {
+        "id": 9,
+        "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+        "price": 64,
+        "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_t.png",
+        "rating": {
+            "rate": 3.3,
+            "count": 203
+        }
+    },
+    {
+        "id": 10,
+        "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+        "price": 109,
+        "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_t.png",
+        "rating": {
+            "rate": 2.9,
+            "count": 470
+        }
+    },
+    {
+        "id": 11,
+        "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+        "price": 109,
+        "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_t.png",
+        "rating": {
+            "rate": 4.8,
+            "count": 319
+        }
+    },
+    {
+        "id": 12,
+        "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+        "price": 114,
+        "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_t.png",
+        "rating": {
+            "rate": 4.8,
+            "count": 400
+        }
+    },
+    {
+        "id": 13,
+        "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+        "price": 599,
+        "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_t.png",
+        "rating": {
+            "rate": 2.9,
+            "count": 250
+        }
+    },
+    {
+        "id": 14,
+        "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+        "price": 999.99,
+        "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_t.png",
+        "rating": {
+            "rate": 2.2,
+            "count": 140
+        }
+    },
+    {
+        "id": 15,
+        "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+        "price": 56.99,
+        "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+        "category": "women's clothing",
+        "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_t.png",
+        "rating": {
+            "rate": 2.6,
+            "count": 235
+        }
+    },
+    {
+        "id": 16,
+        "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+        "price": 29.95,
+        "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+        "category": "women's clothing",
+        "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_t.png",
+        "rating": {
+            "rate": 2.9,
+            "count": 340
+        }
+    },
+    {
+        "id": 17,
+        "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+        "price": 39.99,
+        "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+        "category": "women's clothing",
+        "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2t.png",
+        "rating": {
+            "rate": 3.8,
+            "count": 679
+        }
+    },
+    {
+        "id": 18,
+        "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+        "price": 9.85,
+        "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+        "category": "women's clothing",
+        "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png",
+        "rating": {
+            "rate": 4.7,
+            "count": 130
+        }
+    },
+    {
+        "id": 19,
+        "title": "Opna Women's Short Sleeve Moisture",
+        "price": 7.95,
+        "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+        "category": "women's clothing",
+        "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_t.png",
+        "rating": {
+            "rate": 4.5,
+            "count": 146
+        }
+    },
+    {
+        "id": 20,
+        "title": "DANVOUY Womens T Shirt Casual Cotton Short",
+        "price": 12.99,
+        "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+        "category": "women's clothing",
+        "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_t.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 145
+        }
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="TC_PROD_02_getProductById_returnCorrectProductWithRating" classname="tests.ProductTests" time="1.011">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakestoreapi.com/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"16d-ryVvNeDR+OwaJd+i2vi/OPo/G4Y"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=B16YNPz%2B47QazT3OUZi%2B7YOcZ7Mc939Z91sIaX549HoNNOwDvrzchwGRQtvrSMMTuUfkwifGOoMvAltl4SymhZyDMRHJ%2FHUGXy%2FLfraABMg8YBloctGBi%2F5FqfYs%2FKJIQ%2Fc5"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbed45b59400f-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+    "rating": {
+        "rate": 3.9,
+        "count": 120
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_PROD_03_createProduct_return201WithEchoedProduct" classname="tests.ProductTests" time="0.89">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "title": "Automation Test Hoodie",
+    "price": 49.99,
+    "description": "A hoodie built for QA engineers",
+    "category": "clothing",
+    "image": "https://fakestoreapi.com/img/placeholder.jpg",
+    "rating": null
+}
+HTTP/1.1 201 Created
+Date: Sun, 29 Mar 2026 15:00:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 181
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b5-UOAVy9ZyLzJuINyt2a0J/1YxvWU"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2FPw%2ByL8T%2FsfqlRoPdaK%2BxVuvUfhgTRt9jfOqLosCyvikzDhgCyoGhN1PGGf28FuqGo5MgLCJw9b2Zh7Q6nr%2FntwpoUGBHz2H9%2BnDzmN5Q%2BW3TB7sfZQCkasPwXtOh9%2BVeraA"}]}
+Server: cloudflare
+CF-RAY: 9e3fbedabeef857d-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Automation Test Hoodie",
+    "price": 49.99,
+    "description": "A hoodie built for QA engineers",
+    "image": "https://fakestoreapi.com/img/placeholder.jpg",
+    "category": "clothing"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_PROD_04_updateProduct_return200WithUpdatedFields" classname="tests.ProductTests" time="0.43">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://fakestoreapi.com/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "title": "Updated Laptop Pro Max",
+    "price": 1299.99,
+    "description": "Updated description for automation",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/updated.jpg",
+    "rating": null
+}
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:41 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b8-a/iRxLGw+dQdKSyoUgu4Sl8k4yY"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=nGgy7OUEubEQPJj5pmvPzMgAiS35L9HuAt7ABE4A89i4dVRNj0QLbbTOYl1yxDLdoxZiAtvnAtTeOn7ToL1gCSfWcvlXfxhJfJxLF9zVAS6x1Y9LmGMnoht9AlucLhWCaTaz"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbee02f97ff67-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "title": "Updated Laptop Pro Max",
+    "price": 1299.99,
+    "description": "Updated description for automation",
+    "image": "https://fakestoreapi.com/img/updated.jpg",
+    "category": "electronics"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_PROD_05_deleteProduct_return200WithDeletedProduct" classname="tests.ProductTests" time="0.5">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:42 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"16d-ryVvNeDR+OwaJd+i2vi/OPo/G4Y"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=FBnAkNKuCgPQedLhvGkE8nTb8%2FTC6G1rvkkmN%2Br6bgVUhNHDcbM9kmrZYQm6Gmcgp%2FiH38Gszc9EDyRFALNH%2BU2E%2BxW5D9K9w54O7QzUwoffedQGom0PuaNqVNw35h%2Fl5Q%2FV"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbee2de0668a4-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+    "rating": {
+        "rate": 3.9,
+        "count": 120
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_USER_01_getAllUsers_return200WithFullList" classname="tests.UserTests" time="0.655">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:42 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"bae-Vi0JNVg0EAD6LcGk4v18ASK0bgA"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EoIXSmDdPhNCLjkdJ2bQx5cMHcz070U%2FR8VkyA%2BlbYTrbvVdXu2EJRXdpCAw0%2Bof1GesLLFqLrIgUvnRKnDTSzq6QdXns0Eo%2FHSGrs3DpvgsjqWNF4tuQ6sAhYjEdenS3pGM"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbee62c00418c-BOM
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "new road",
+            "number": 7682,
+            "zipcode": "12926-3874"
+        },
+        "id": 1,
+        "email": "john@gmail.com",
+        "username": "johnd",
+        "password": "m38rmF$",
+        "name": {
+            "firstname": "john",
+            "lastname": "doe"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "Lovers Ln",
+            "number": 7267,
+            "zipcode": "12926-3874"
+        },
+        "id": 2,
+        "email": "morrison@gmail.com",
+        "username": "mor_2314",
+        "password": "83r5^_",
+        "name": {
+            "firstname": "david",
+            "lastname": "morrison"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-30.1310"
+            },
+            "city": "Cullman",
+            "street": "Frances Ct",
+            "number": 86,
+            "zipcode": "29567-1452"
+        },
+        "id": 3,
+        "email": "kevin@gmail.com",
+        "username": "kevinryan",
+        "password": "kev02937@",
+        "name": {
+            "firstname": "kevin",
+            "lastname": "ryan"
+        },
+        "phone": "1-567-094-1345",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3467",
+                "long": "-20.1310"
+            },
+            "city": "San Antonio",
+            "street": "Hunters Creek Dr",
+            "number": 6454,
+            "zipcode": "98234-1734"
+        },
+        "id": 4,
+        "email": "don@gmail.com",
+        "username": "donero",
+        "password": "ewedon",
+        "name": {
+            "firstname": "don",
+            "lastname": "romer"
+        },
+        "phone": "1-765-789-6734",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-40.1310"
+            },
+            "city": "san Antonio",
+            "street": "adams St",
+            "number": 245,
+            "zipcode": "80796-1234"
+        },
+        "id": 5,
+        "email": "derek@gmail.com",
+        "username": "derek",
+        "password": "jklg*_56",
+        "name": {
+            "firstname": "derek",
+            "lastname": "powell"
+        },
+        "phone": "1-956-001-1945",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "20.1677",
+                "long": "-10.6789"
+            },
+            "city": "el paso",
+            "street": "prospect st",
+            "number": 124,
+            "zipcode": "12346-0456"
+        },
+        "id": 6,
+        "email": "david_r@gmail.com",
+        "username": "david_r",
+        "password": "3478*#54",
+        "name": {
+            "firstname": "david",
+            "lastname": "russell"
+        },
+        "phone": "1-678-345-9856",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "10.3456",
+                "long": "20.6419"
+            },
+            "city": "fresno",
+            "street": "saddle st",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 7,
+        "email": "miriam@gmail.com",
+        "username": "snyder",
+        "password": "f238&@*$",
+        "name": {
+            "firstname": "miriam",
+            "lastname": "snyder"
+        },
+        "phone": "1-123-943-0563",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3456",
+                "long": "10.6419"
+            },
+            "city": "mesa",
+            "street": "vally view ln",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 8,
+        "email": "william@gmail.com",
+        "username": "hopkins",
+        "password": "William56$hj",
+        "name": {
+            "firstname": "william",
+            "lastname": "hopkins"
+        },
+        "phone": "1-478-001-0890",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.12456",
+                "long": "20.5419"
+            },
+            "city": "miami",
+            "street": "avondale ave",
+            "number": 345,
+            "zipcode": "96378-0245"
+        },
+        "id": 9,
+        "email": "kate@gmail.com",
+        "username": "kate_h",
+        "password": "kfejk@*_",
+        "name": {
+            "firstname": "kate",
+            "lastname": "hale"
+        },
+        "phone": "1-678-456-1934",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "30.24788",
+                "long": "-20.545419"
+            },
+            "city": "fort wayne",
+            "street": "oak lawn ave",
+            "number": 526,
+            "zipcode": "10256-4532"
+        },
+        "id": 10,
+        "email": "jimmie@gmail.com",
+        "username": "jimmie_k",
+        "password": "klein*#%*",
+        "name": {
+            "firstname": "jimmie",
+            "lastname": "klein"
+        },
+        "phone": "1-104-001-4567",
+        "__v": 0
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="TC_USER_02_getUserById_returnCorrectUserWithAllNestedFields" classname="tests.UserTests" time="0.676">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakestoreapi.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:43 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"120-HNMhv14aQeBJetA9fBvavCZ+gdk"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pLQhGhohg6dhYJAyhnhoaSI4%2FPePyjQ4S6hYYJv0sf5SUWvEPhfHEgUrSQUBRGDCQfiaX8kI1Y1%2BnO%2F1crUZh3otCJNKlnhEAhSO4XKBH7JT4xAWzhj%2B46UqZ4cHhgRnfRc%2F"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbeea3a6541c7-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "address": {
+        "geolocation": {
+            "lat": "-37.3159",
+            "long": "81.1496"
+        },
+        "city": "kilcoole",
+        "street": "new road",
+        "number": 7682,
+        "zipcode": "12926-3874"
+    },
+    "id": 1,
+    "email": "john@gmail.com",
+    "username": "johnd",
+    "password": "m38rmF$",
+    "name": {
+        "firstname": "john",
+        "lastname": "doe"
+    },
+    "phone": "1-570-236-7033",
+    "__v": 0
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_USER_03_createUser_return200WithCreatedUser" classname="tests.UserTests" time="0.974">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;201&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <201>.
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at tests.UserTests.TC_USER_03_createUser_return200WithCreatedUser(UserTests.java:130)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "email": "qa_auto@testmail.com",
+    "username": "qa_auto_1774796444686",
+    "password": "Test@12345",
+    "phone": null,
+    "name": null,
+    "address": null
+}
+HTTP/1.1 201 Created
+Date: Sun, 29 Mar 2026 15:00:44 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 9
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=FgkbeLyTMg6Se78C9JFprShxuFjCzMU%2FiT%2FppzQhV0VXD5C%2BCCxNYdzFeeVJNtNnZT5nzTwhbGSdQ0huFT18LVkjHj8CxlZ4dX46qoHEul1Y9SE0KvZuXLD4o2KD9x7yw%2Bq5"}]}
+Server: cloudflare
+CF-RAY: 9e3fbeef88d9ff70-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_USER_04_updateUser_return200WithUpdatedFields" classname="tests.UserTests" time="0.46">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://fakestoreapi.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "email": "qa_updated@testmail.com",
+    "username": "qa_updated",
+    "password": "Updated@99",
+    "phone": null,
+    "name": null,
+    "address": null
+}
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:45 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"85-VaB7JR94BT4/4jfXBi/pA3CG3uc"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=KnZSUA0VVfPYdBXJ%2BBZ5wNDPuY3%2Bae5YyuKa2c%2F50y3MJMKqYAPgNxZj3cfJMN1jb7TEM%2FEcTI0u7cK2U4mjhtyuFlOZ8s5X5LwDQOFpF9IaFmFMpsl75jMPqdtB2gZL0ZI%2B"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbef47a308a21-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": null,
+    "email": "qa_updated@testmail.com",
+    "username": "qa_updated",
+    "password": "Updated@99",
+    "phone": null,
+    "name": null,
+    "address": null
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_USER_05_deleteUser_return200WithDeletedUserObject" classname="tests.UserTests" time="0.511">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://fakestoreapi.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:45 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"120-HNMhv14aQeBJetA9fBvavCZ+gdk"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=G99jbyS7tZkhXt7kipouL6oIZr%2FP4YAB3EoC5hbJMl%2BYbOjAowkkXgYwB01kUqbtd2OgsRfTAqEObY%2F0%2FwxMdjn6OfBce1oF7Yw0wJKVllBXfjrW6VRfDflyjcCbnKKnUnfa"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbef75a08419f-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "address": {
+        "geolocation": {
+            "lat": "-37.3159",
+            "long": "81.1496"
+        },
+        "city": "kilcoole",
+        "street": "new road",
+        "number": 7682,
+        "zipcode": "12926-3874"
+    },
+    "id": 1,
+    "email": "john@gmail.com",
+    "username": "johnd",
+    "password": "m38rmF$",
+    "name": {
+        "firstname": "john",
+        "lastname": "doe"
+    },
+    "phone": "1-570-236-7033",
+    "__v": 0
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_CART_01_getAllCarts_return200WithFullList" classname="tests.CartTests" time="0.605">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:46 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3a8-j3C8983spvK8GpaSYa+SyYlAS2A"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Rq0VCDftpD20gTs%2FZCL5XnQvH9%2B%2Bjukqi6qqilIWrdt24AenyCERTLHZ8%2B4xexCTAxuTaj1Bn2omFQXRcI0Bdnq2nKks7v0uVEWTxPUwsFQ0DrO%2FO09cPqwJ36KuwkLCQIV4"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbefa986d4221-BOM
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "userId": 1,
+        "date": "2020-03-02T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 1,
+                "quantity": 4
+            },
+            {
+                "productId": 2,
+                "quantity": 1
+            },
+            {
+                "productId": 3,
+                "quantity": 6
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 2,
+        "userId": 1,
+        "date": "2020-01-02T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 2,
+                "quantity": 4
+            },
+            {
+                "productId": 1,
+                "quantity": 10
+            },
+            {
+                "productId": 5,
+                "quantity": 2
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 3,
+        "userId": 2,
+        "date": "2020-03-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 1,
+                "quantity": 2
+            },
+            {
+                "productId": 9,
+                "quantity": 1
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 4,
+        "userId": 3,
+        "date": "2020-01-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 1,
+                "quantity": 4
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 5,
+        "userId": 3,
+        "date": "2020-03-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 7,
+                "quantity": 1
+            },
+            {
+                "productId": 8,
+                "quantity": 1
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 6,
+        "userId": 4,
+        "date": "2020-03-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 10,
+                "quantity": 2
+            },
+            {
+                "productId": 12,
+                "quantity": 3
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "id": 7,
+        "userId": 8,
+        "date": "2020-03-01T00:00:00.000Z",
+        "products": [
+            {
+                "productId": 18,
+                "quantity": 1
+            }
+        ],
+        "__v": 0
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="TC_CART_02_getCartById_returnCorrectCartWithAllFields" classname="tests.CartTests" time="0.712">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakestoreapi.com/carts/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:46 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a1-wvAyaNKAHffOoZd5/I4wHuNFvSs"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xy0r9fC1VJxOhumyni9hwr8nG28X0XNXrPgZKMofaJgR%2BY0oCD%2F7X2BV7VFTJcF%2BEeaChJMQSOXBM2XBDI2LX%2B%2BpwhPjcK7O7U%2F6j%2BybkKUM%2FmgOpl7Gk%2F4mTFP4A7xCPSdP"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbefe9a480b23-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "userId": 1,
+    "date": "2020-03-02T00:00:00.000Z",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 4
+        },
+        {
+            "productId": 2,
+            "quantity": 1
+        },
+        {
+            "productId": 3,
+            "quantity": 6
+        }
+    ],
+    "__v": 0
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_CART_03_createCart_return201WithCreatedCart" classname="tests.CartTests" time="0.409">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "userId": 3,
+    "date": null,
+    "products": [
+        {
+            "productId": 5,
+            "quantity": 2
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Sun, 29 Mar 2026 15:00:47 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 74
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4a-DYk7kGnQLJ0aHEP+ZTrs6DJdfBY"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=7hRlEQTAiimyBucPOc0MUD9tD4epDLQ4h1LPYbhgWUyFXDsAcCIX%2BUuPWvJGQWruAsE2kxLNTTdSkgeQXmvKS9H2FgbcXLJ3pWatSVVY0SPTPpfX4NSv9%2Fqs1eJuxi79pHli"}]}
+Server: cloudflare
+CF-RAY: 9e3fbf02ea9f002d-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 3,
+    "date": null,
+    "products": [
+        {
+            "productId": 5,
+            "quantity": 2
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_CART_04_updateCart_return200WithUpdatedFields" classname="tests.CartTests" time="0.398">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://fakestoreapi.com/carts/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "userId": 7,
+    "date": null,
+    "products": [
+        {
+            "productId": 2,
+            "quantity": 10
+        }
+    ]
+}
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:47 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4a-/CBy7o7xU3wOTV99MSAeaO9YJKQ"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=eBZzwp8DDFawmgRePCuTJ8%2F%2BT7DV1%2B%2FpH661mfLuNRVQ5J%2Bl%2BrmRkRFODrJBbHTOGorP4wwDnpGEkpS0LsiND0gxvB0Ld4caSJIR%2FpVfcA6em5V4RUO7ZqU96SL%2FWYr4wXiz"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbf05794d3e40-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "userId": 7,
+    "date": null,
+    "products": [
+        {
+            "productId": 2,
+            "quantity": 10
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TC_CART_05_deleteCart_return200WithDeletedCartObject" classname="tests.CartTests" time="0.622">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 15:00:48 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a1-wvAyaNKAHffOoZd5/I4wHuNFvSs"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Bdwt7QIhxcd1gsFPpRrE45hPwgFmreQxTIfhrlF4Q5MA6Uc2uH1%2FbKD%2BIoIlD4obfVwwsEK7mfhacT2C0tJ3vDugIkbJEBIvwcJr%2BkLBmRB8V%2F3R3KIrmQjqAqZGaWoaY5oX"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e3fbf07eb690ac9-BOM
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "userId": 1,
+    "date": "2020-03-02T00:00:00.000Z",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 4
+        },
+        {
+            "productId": 2,
+            "quantity": 1
+        },
+        {
+            "productId": 3,
+            "quantity": 6
+        }
+    ],
+    "__v": 0
+}
+]]></system-out>
+  </testcase>
+</testsuite>

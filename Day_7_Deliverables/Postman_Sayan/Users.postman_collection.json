@@ -1,0 +1,290 @@
+{
+  "info": {
+    "_postman_id": "bd3b38f8-252a-4675-bdc7-306c0600fc3a",
+    "name": "Users",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42367197",
+    "_collection_link": "https://go.postman.co/collection/42367197-bd3b38f8-252a-4675-bdc7-306c0600fc3a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetAllUsers",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Status code name has OK\", function () {\r",
+              "        pm.response.to.have.status(\"OK\");\r",
+              "});\r",
+              "body = pm.response.json();\r",
+              "pm.environment.set(\"username\",body[0].username);\r",
+              "pm.environment.set(\"password\",body[0].password);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BaseURL}}/users",
+          "host": [
+            "{{BaseURL}}"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AddNewUser",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 201\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "});\r",
+              "pm.test(\"Status code name has string\", function () {\r",
+              "    pm.response.to.have.status(\"Created\");\r",
+              "});\r",
+              "pm.test(\"Body matches string\", function () {\r",
+              "    pm.expect(pm.response.text()).to.include(\"9234\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 9234,\r\n  \"username\": \"demouser\",\r\n  \"email\": \"demouser@gmail.com\",\r\n  \"password\": \"demo123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseURL}}/users",
+          "host": [
+            "{{BaseURL}}"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetASingleUser",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Status code name has OK\", function () {\r",
+              "    pm.response.to.have.status(\"OK\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BaseURL}}/users/{{user_id}}",
+          "host": [
+            "{{BaseURL}}"
+          ],
+          "path": [
+            "users",
+            "{{user_id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateAUser",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Status code name has OK\", function () {\r",
+              "    pm.response.to.have.status(\"OK\");\r",
+              "});\r",
+              "pm.test(\"Body matches id\", function () {\r",
+              "    pm.expect(pm.response.text()).to.include(\"10\");\r",
+              "});\r",
+              "pm.test(\"Body matches username\", function () {\r",
+              "    pm.expect(pm.response.text()).to.include(\"updated_string\");\r",
+              "});\r",
+              "pm.test(\"Body matches email\", function () {\r",
+              "    pm.expect(pm.response.text()).to.include(\"updated_string@gmail.com\");\r",
+              "});\r",
+              "pm.test(\"Body matches password\", function () {\r",
+              "    pm.expect(pm.response.text()).to.include(\"updated123\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 10,\r\n  \"username\": \"updated_string\",\r\n  \"email\": \"updated_string@gmail.com\",\r\n  \"password\": \"updated123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseURL}}/users/{{user_id_new}}",
+          "host": [
+            "{{BaseURL}}"
+          ],
+          "path": [
+            "users",
+            "{{user_id_new}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteAUser",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Status code name has OK\", function () {\r",
+              "    pm.response.to.have.status(\"OK\");\r",
+              "});\r",
+              "pm.test(\"Validate User Details\", function () {\r",
+              "    // Parse the response body to a JSON object\r",
+              "    var jsonData = pm.response.json();\r",
+              "\r",
+              "    pm.expect(jsonData.email).to.eql(\"jimmie@gmail.com\");\r",
+              "    pm.expect(jsonData.username).to.eql(\"jimmie_k\");\r",
+              "    \r",
+              "    pm.expect(jsonData.address.city).to.eql(\"fort wayne\");\r",
+              "    pm.expect(jsonData.address.geolocation.lat).to.eql(\"30.24788\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{BaseURL}}/users/{{user_id_new}}",
+          "host": [
+            "{{BaseURL}}"
+          ],
+          "path": [
+            "users",
+            "{{user_id_new}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

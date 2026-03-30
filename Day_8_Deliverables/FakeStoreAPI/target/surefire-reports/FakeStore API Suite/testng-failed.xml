@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FakeStore API Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utils.CustomHtmlReporter"/>
+  </listeners>
+  <test thread-count="5" name="Auth(failed)" verbose="0">
+    <classes>
+      <class name="tests.AuthTests">
+        <methods>
+          <include name="initSuite"/>
+          <include name="TC_AUTH_01_validCredentials_return200WithToken"/>
+          <include name="TC_AUTH_02_loginResponse_tokenIsNonBlankString"/>
+        </methods>
+      </class> <!-- tests.AuthTests -->
+    </classes>
+  </test> <!-- Auth(failed) -->
+  <test thread-count="5" name="Products(failed)" verbose="0">
+    <classes>
+      <class name="tests.ProductTests">
+        <methods>
+          <include name="TC_PROD_01_getAllProducts_return200WithFullList"/>
+          <include name="initSuite"/>
+        </methods>
+      </class> <!-- tests.ProductTests -->
+    </classes>
+  </test> <!-- Products(failed) -->
+  <test thread-count="5" name="Users(failed)" verbose="0">
+    <classes>
+      <class name="tests.UserTests">
+        <methods>
+          <include name="initSuite"/>
+          <include name="TC_USER_03_createUser_return200WithCreatedUser"/>
+        </methods>
+      </class> <!-- tests.UserTests -->
+    </classes>
+  </test> <!-- Users(failed) -->
+</suite> <!-- Failed suite [FakeStore API Suite] -->

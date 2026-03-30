@@ -1,0 +1,13 @@
+F:\API_Sprint\FakeStoreAPI\src\test\java\base\BaseTest.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\config\ConfigManager.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\endpoints\Endpoints.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\pojo\Cart.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\pojo\LoginRequest.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\pojo\Product.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\pojo\User.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\tests\AuthTests.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\tests\CartTests.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\tests\ProductTests.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\tests\UserTests.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\utils\CustomHtmlReporter.java
+F:\API_Sprint\FakeStoreAPI\src\test\java\utils\TestDataBuilder.java
