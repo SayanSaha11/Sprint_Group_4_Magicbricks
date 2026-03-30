@@ -1,0 +1,274 @@
+{
+  "info": {
+    "_postman_id": "7bf53be7-cec6-42ff-8979-4b156188d26d",
+    "name": "Products",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52995881",
+    "_collection_link": "https://go.postman.co/collection/52995881-7bf53be7-cec6-42ff-8979-4b156188d26d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetAllProducts",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Status code name has OK\", function () {\r",
+              "    pm.response.to.have.status(\"OK\");\r",
+              "});\r",
+              "pm.test(\"All products have valid ratings and prices\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    \r",
+              "    jsonData.forEach(function(product) {\r",
+              "        pm.expect(product.price).to.be.above(0);\r",
+              "        pm.expect(product.rating).to.have.property('rate');\r",
+              "        pm.expect(product.rating).to.have.property('count');\r",
+              "    });\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://fakestoreapi.com/products",
+          "protocol": "https",
+          "host": [
+            "fakestoreapi",
+            "com"
+          ],
+          "path": [
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AddANewProduct",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 201\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Successful POST request\", function () {\r",
+              "    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Successful creation of Shoe\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "\r",
+              "    pm.expect(jsonData.id).to.not.be.null;\r",
+              "    pm.expect(jsonData.id).to.eql(21);\r",
+              "\r",
+              "    pm.expect(jsonData.title).to.eql(\"Asics\");\r",
+              "    pm.expect(jsonData.price).to.eql(10000);\r",
+              "    pm.expect(jsonData.category).to.eql(\"Shoe\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is acceptable\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 21,\r\n  \"title\": \"Asics\",\r\n  \"price\": 10000,\r\n  \"description\": \"Shoe\",\r\n  \"category\": \"Shoe\",\r\n  \"image\": \"http://example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://fakestoreapi.com/products",
+          "protocol": "https",
+          "host": [
+            "fakestoreapi",
+            "com"
+          ],
+          "path": [
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetASingleProduct",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Status code name has OK\", function () {\r",
+              "    pm.response.to.have.status(\"OK\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Product 20 details are correct\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "\r",
+              "    pm.expect(jsonData.id).to.eql(20);\r",
+              "    pm.expect(jsonData.category).to.eql(\"women's clothing\");\r",
+              "    pm.expect(jsonData.price).to.be.a('number');\r",
+              "    pm.expect(jsonData.price).to.eql(12.99);\r",
+              "\r",
+              "    pm.expect(jsonData.title).to.include(\"DANVOUY\");\r",
+              "\r",
+              "    pm.expect(jsonData.rating.rate).to.eql(3.6);\r",
+              "    pm.expect(jsonData.rating.count).to.eql(145);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://fakestoreapi.com/products/{{product_id}}",
+          "protocol": "https",
+          "host": [
+            "fakestoreapi",
+            "com"
+          ],
+          "path": [
+            "products",
+            "{{product_id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateAProduct",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Status code name has OK\", function () {\r",
+              "    pm.response.to.have.status(\"OK\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Product 20 details updated\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "\r",
+              "    pm.expect(jsonData.id).to.eql(20);\r",
+              "    pm.expect(jsonData.category).to.eql(\"Shoe\");\r",
+              "    pm.expect(jsonData.price).to.be.a('number');\r",
+              "    pm.expect(jsonData.price).to.eql(10000);\r",
+              "\r",
+              "    pm.expect(jsonData.title).to.include(\"Asics\");\r",
+              "\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 20,\r\n  \"title\": \"Asics\",\r\n  \"price\": 10000,\r\n  \"description\": \"Shoe\",\r\n  \"category\": \"Shoe\",\r\n  \"image\": \"http://example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://fakestoreapi.com/products/{{product_id}}",
+          "protocol": "https",
+          "host": [
+            "fakestoreapi",
+            "com"
+          ],
+          "path": [
+            "products",
+            "{{product_id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteAProduct",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200 - Successful Deletion\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Deleted item matches requested ID\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    \r",
+              "    pm.expect(jsonData.id).to.eql(20);\r",
+              "    pm.expect(jsonData.title).to.include(\"DANVOUY\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://fakestoreapi.com/products/{{product_id}}",
+          "protocol": "https",
+          "host": [
+            "fakestoreapi",
+            "com"
+          ],
+          "path": [
+            "products",
+            "{{product_id}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

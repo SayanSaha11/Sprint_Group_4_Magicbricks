@@ -1,0 +1,69 @@
+{
+  "info": {
+    "_postman_id": "0dd46aac-05d7-4305-8553-ebc88676e912",
+    "name": "Auth",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52995881",
+    "_collection_link": "https://go.postman.co/collection/52995881-0dd46aac-05d7-4305-8553-ebc88676e912?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 201\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "});\r",
+              "\r",
+              "\r",
+              "\r",
+              "\r",
+              "body=pm.response.json();\r",
+              "pm.environment.set(\"token\",body.token);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmthbi5uYXlhay4xNDEyQGdtYWlsLmNvbSBTSE9QUEVSIiwiZXhwIjoxNzczMDY5MzAwLCJpYXQiOjE3NzMwMzMzMDB9.DG0NE4MpQ18TB229Pg7wSdVdN_hyMkOJg-knLpb79Ok",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"{{username}}\",\r\n  \"password\": \"{{password}}\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseUrl}}/auth/login",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

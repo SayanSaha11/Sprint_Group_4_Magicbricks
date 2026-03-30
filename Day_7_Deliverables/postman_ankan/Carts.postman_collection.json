@@ -1,0 +1,247 @@
+{
+  "info": {
+    "_postman_id": "8e6b9948-d8b4-4785-b788-98d5a2733c32",
+    "name": "Carts",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52995881",
+    "_collection_link": "https://go.postman.co/collection/52995881-8e6b9948-d8b4-4785-b788-98d5a2733c32?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetAllCarts",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Verify Cart List Integrity\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "\r",
+              "    pm.expect(jsonData).to.be.an('array');\r",
+              "    pm.expect(jsonData.length).to.be.at.least(1);\r",
+              "\r",
+              "    var cartOne = jsonData.find(c => c.id === 1);\r",
+              "    pm.expect(cartOne.userId).to.eql(1);\r",
+              "    pm.expect(cartOne.date).to.include(\"2020-03-02\");\r",
+              "\r",
+              "    pm.expect(cartOne.products).to.be.an('array');\r",
+              "    pm.expect(cartOne.products[0].productId).to.eql(1);\r",
+              "    pm.expect(cartOne.products[0].quantity).to.eql(4);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BaseUrl}}/carts",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "carts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AddANewCart",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 201\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Cart created successfully with nested products\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "\r",
+              "    pm.expect(jsonData.id).to.eql(11);\r",
+              "    pm.expect(jsonData.userId).to.eql(80);\r",
+              "\r",
+              "    pm.expect(jsonData.products).to.be.an('array');\r",
+              "    pm.expect(jsonData.products.length).to.be.at.least(1);\r",
+              "\r",
+              "    var firstProduct = jsonData.products[0];\r",
+              "    pm.expect(firstProduct.title).to.eql(\"Asics Shoe\");\r",
+              "    pm.expect(firstProduct.price).to.eql(10000);\r",
+              "    pm.expect(firstProduct.category).to.eql(\"Running Shoe\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 8,\r\n  \"userId\": 80,\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"title\": \"Asics Shoe\",\r\n      \"price\": 10000,\r\n      \"description\": \"Running Shoe\",\r\n      \"category\": \"Running Shoe\",\r\n      \"image\": \"http://example.com\"\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseUrl}}/carts",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "carts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetASingleCart",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is less than 2000ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Order details for ID 4 are correct\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "\r",
+              "    pm.expect(jsonData.id).to.eql(4);\r",
+              "    pm.expect(jsonData.userId).to.eql(3);\r",
+              "    pm.expect(jsonData.date).to.include(\"2020-01-01\");\r",
+              "\r",
+              "    var item = jsonData.products[0];\r",
+              "    pm.expect(item.productId).to.eql(1);\r",
+              "    pm.expect(item.quantity).to.eql(4);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BaseUrl}}/carts/{{cart_id}}",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "carts",
+            "{{cart_id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateACart",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Product ID 4 details updated\", function () {\r",
+              "    var responseBody = pm.response.text();\r",
+              "    pm.expect(responseBody).to.include('\"id\":4');\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{BaseUrl}}/carts/{{cart_id}}",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "carts",
+            "{{cart_id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteACart",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200 - Successful Deletion\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response body confirms deletion of Cart ID 4\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "\r",
+              "    pm.expect(jsonData.id).to.eql(4);\r",
+              "    pm.expect(jsonData.userId).to.eql(3);\r",
+              "\r",
+              "    pm.expect(jsonData.products[0].productId).to.eql(1);\r",
+              "    pm.expect(jsonData.products[0].quantity).to.eql(4);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Deletion processed within 1000ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{BaseUrl}}/carts/{{cart_id}}",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "carts",
+            "{{cart_id}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
