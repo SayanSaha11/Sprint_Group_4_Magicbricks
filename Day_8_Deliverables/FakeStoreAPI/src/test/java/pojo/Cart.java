@@ -15,7 +15,7 @@ public class Cart {
 
     public Cart() {}
 
-    /** Convenience constructor for POST /carts payload */
+    /** constructor for POST /carts payload */
     public Cart(Integer userId, List<CartItem> products) {
         this.userId   = userId;
         this.products = products;
@@ -33,7 +33,7 @@ public class Cart {
     public List<CartItem> getProducts()              { return products; }
     public void           setProducts(List<CartItem> v) { this.products = v; }
 
-    // ── Inner: CartItem ───────────────────────────────────────────────────────
+    // ── Inner: CartItem ───
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class CartItem {
@@ -47,10 +47,20 @@ public class Cart {
             this.quantity  = quantity;
         }
 
-        public Integer getProductId()          { return productId; }
-        public void    setProductId(Integer v) { this.productId = v; }
+        public Integer getProductId()          { 
+        	return productId; 
+        }
+        
+        public void setProductId(Integer v) { 
+        	this.productId = v; 
+        }
 
-        public Integer getQuantity()           { return quantity; }
-        public void    setQuantity(Integer v)  { this.quantity = v; }
+        public Integer getQuantity()           { 
+        	return quantity; 
+        }
+        
+        public void setQuantity(Integer v)  { 
+        	this.quantity = v;
+        }
     }
 }
