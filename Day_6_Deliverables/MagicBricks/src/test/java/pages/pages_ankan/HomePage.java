@@ -52,17 +52,42 @@ public class HomePage extends BasePage {
 
     // ✅ TC_04 ONLY
     // Types invalid city — NO dropdown click, go straight to search
+//    public void enterInvalidCity(String city) throws InterruptedException {
+//        try {
+//            tagClose.click();
+//        } catch (Exception e) {}
+//        Thread.sleep(500);
+//        cityInput.click();
+//        tagClose.click();
+//        cityInput.sendKeys(city);
+////        tagClose.click();
+////        Thread.sleep(3000);
+//        // ❌ NO dropdown click here — Unknown has no suggestion
+//    }
+    
+    
+//    public void enterInvalidCity(String city) throws InterruptedException {
+//        try {
+//            tagClose.click();
+//        } catch (Exception e) {}
+//        Thread.sleep(500);
+//        cityInput.click();
+//        try {
+//            tagClose.click();  // ✅ safe now
+//        } catch (Exception e) {}
+//        cityInput.sendKeys(city);
+//    }
+    
     public void enterInvalidCity(String city) throws InterruptedException {
         try {
             tagClose.click();
         } catch (Exception e) {}
         Thread.sleep(500);
         cityInput.click();
-        tagClose.click();
+        try {
+            tagClose.click();  // ✅ safe now
+        } catch (Exception e) {}
         cityInput.sendKeys(city);
-//        tagClose.click();
-//        Thread.sleep(3000);
-        // ❌ NO dropdown click here — Unknown has no suggestion
     }
 
     public void clickSearch() throws InterruptedException {
