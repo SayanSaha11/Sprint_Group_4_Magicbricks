@@ -9,20 +9,19 @@ import java.util.Collections;
 
 /**
  * Factory class — builds all test request payloads.
- * No Lombok. Plain Java constructors only.
- * Keeps test classes clean and free of inline object construction.
  */
+
 public final class TestDataBuilder {
 
     private TestDataBuilder() {}
 
-    // ── Auth ──────────────────────────────────────────────────────────────────
+    // ── Auth ──
 
     public static LoginRequest validLoginRequest(String username, String password) {
         return new LoginRequest(username, password);
     }
 
-    // ── Product ───────────────────────────────────────────────────────────────
+    // ── Product ──
 
     /** Payload for POST /products */
     public static Product newProduct() {
@@ -46,7 +45,7 @@ public final class TestDataBuilder {
         );
     }
 
-    // ── User ──────────────────────────────────────────────────────────────────
+    // ── User ───
 
     /** Payload for POST /users */
     public static User newUser() {
@@ -66,8 +65,7 @@ public final class TestDataBuilder {
         );
     }
 
-    // ── Cart ──────────────────────────────────────────────────────────────────
-
+    // ── Cart ──
     /** Payload for POST /carts and PUT /carts/{id} */
     public static Cart newCart(int userId, int productId, int quantity) {
         Cart.CartItem item = new Cart.CartItem(productId, quantity);
