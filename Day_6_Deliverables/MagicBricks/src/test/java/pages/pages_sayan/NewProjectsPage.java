@@ -16,7 +16,7 @@ public class NewProjectsPage extends BasePage {
             By.xpath("//div[contains(@class,'mghome__prjblk__txtsec')]");
 
     private final By contactSeller =
-            By.xpath("//span[contains(text(),'Contact Seller')]");
+            By.xpath("(//span[text()='Contact Seller'])[1]");
 
     private final By nameField =
             By.xpath("(//input[@id='userName'])[1]");
@@ -152,8 +152,9 @@ public class NewProjectsPage extends BasePage {
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(topMatchContent));
     }
 
-    public void clickContactSubmitButton() {
-        longWaitClickable(firstTopMatch).click();
+    public void clickContactSubmitButton() throws InterruptedException {
+    	Thread.sleep(50000);
+        longWaitClickable(getContactBtn).click();
     }
 
     public void printContactedConfirmation() {

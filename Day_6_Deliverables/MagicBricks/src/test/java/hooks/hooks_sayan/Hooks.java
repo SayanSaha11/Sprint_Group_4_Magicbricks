@@ -25,7 +25,7 @@ public class Hooks {
 
     @After(order = 0)
     public void tearDown(Scenario scenario) throws InterruptedException {
-        Thread.sleep(1500);
+        Thread.sleep(4500);
 
         String browser = DriverManager.getBrowser().toUpperCase();
 

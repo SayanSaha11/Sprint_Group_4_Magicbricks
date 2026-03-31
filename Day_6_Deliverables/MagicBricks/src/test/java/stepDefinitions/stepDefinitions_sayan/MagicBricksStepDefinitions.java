@@ -243,15 +243,15 @@ public class MagicBricksStepDefinitions {
     }
 
     @When("the user switches to the project detail tab")
-    public void the_user_switches_to_the_project_detail_tab() {
+    public void the_user_switches_to_the_project_detail_tab() throws InterruptedException {
         secondTab = basePage.currentHandle();
         basePage.switchToThirdTab(mainTab, secondTab);
         basePage.waitPageReady();                    // ← Anti-stale protection
-
+        Thread.sleep(1000);
         // Stale-safe contact button check
         WebElement contactBtn = wait.until(driver -> {
             try {
-                return driver.findElement(By.xpath("//span[text()='Contact Seller'][1]"));
+                return driver.findElement(By.xpath("(//span[text()='Contact Seller'])[1]"));
             } catch (StaleElementReferenceException e) {
                 return null;
             }
@@ -294,7 +294,8 @@ public class MagicBricksStepDefinitions {
     }
 
     @When("the user selects the first top match")
-    public void the_user_selects_the_first_top_match() {
+    public void the_user_selects_the_first_top_match() throws InterruptedException {
+    	newProjectsPage.clickContactSubmitButton();
         System.out.println("The contact details is sent to Phone Number.");
     }
 
@@ -446,9 +447,10 @@ public class MagicBricksStepDefinitions {
     }
 
     @When("the user switches to the office detail tab")
-    public void the_user_switches_to_the_office_detail_tab() {
+    public void the_user_switches_to_the_office_detail_tab() throws InterruptedException {
         basePage.switchToThirdTab(mainTab, secondTab);
         basePage.waitPageReady();
+        Thread.sleep(2000);
         WebElement phoneBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//a[@class='mb-ldp__action--btn large btn-white freecab']")));
         Assert.assertTrue(phoneBtn.isDisplayed(),

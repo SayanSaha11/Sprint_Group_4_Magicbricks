@@ -47,7 +47,7 @@ Feature: MagicBricks Buy Module Functional Validation
     When the user clicks on the first new project
     And the user switches to the project detail tab
     And the user clicks Contact Seller
-    And the user fills the enquiry form with name "Test User" email "testuser@gmail.com" and mobile "9123359056"
+    And the user fills the enquiry form with name "Sayan Saha" email "sayansaha@gmail.com" and mobile "9163359056"
     And the user clicks Get Contact Details
     And the user selects the first top match
     Then the contact button text should be displayed
