@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.notNullValue;
 @Feature("Auth")
 public class AuthTests extends BaseTest {
 
-    // ── TC_AUTH_01 ────────────────────────────────────────────────────────────
+    // ── TC_AUTH_01 ─────────────
     @Test(priority = 1)
     @Story("Login")
     @Description("POST /auth/login with valid credentials must return 200 and a token field")
@@ -36,7 +36,7 @@ public class AuthTests extends BaseTest {
             .body("token", notNullValue());
     }
 
-    // ── TC_AUTH_02 ────────────────────────────────────────────────────────────
+    // ── TC_AUTH_02 ────────────
     @Test(priority = 2)
     @Story("Login")
     @Description("Token returned on login must be a non-blank string")
